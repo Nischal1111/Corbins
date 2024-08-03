@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-nav {
+    position: relative;
+}
+
+.custom-nav:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0;
+    height: 1px;
+    left: -1px;
+    top: 1.6rem;
+    transition: all 0.5s ease;
+}
+
+.custom-nav:hover:after,
+.custom-nav.active:after {
+    width: 100%;
+}
