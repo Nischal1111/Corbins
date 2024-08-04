@@ -31,7 +31,7 @@ const Nav = () => {
     ];
 
     return (
-        <main className={`h-20 bg-black w-full flex items-center px-8 justify-between text-white ${subFont.className} fixed border-b-[0.1px] border-white`}>
+        <main className={`h-20 bg-black w-full flex items-center z-[100] px-8 justify-between text-white ${subFont.className} fixed border-b-[0.1px] border-white`}>
             <section className="flex gap-5 items-center text-base capitalize relative">
                 {navItems.map((item) => (
                     <Link href={item.link} key={item.title}>
