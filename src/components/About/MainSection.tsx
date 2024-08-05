@@ -7,8 +7,8 @@ import { IoMdMail } from 'react-icons/io'
 
 const MainSection = () => {
   return (
-    <article className={`flex w-full px-12 gap-24 ${mainFont.className} relative`}>
-      <main className='relative flex flex-col flex-start w-[50%] mb-8'>
+    <article className={`flex w-full px-12 gap-24 ${mainFont.className} relative -mb-20`}>
+      <main className='relative flex flex-col flex-start w-[50%]'>
         <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full h-80% mt-[40%]'/>
 
         <div className='py-12'>
@@ -61,7 +61,7 @@ const MainSection = () => {
             creations. Join our community and be the first to know about special events, new menu items, and exclusive promotions.
           </p>
 
-          <div className='flex gap-4 items-center mt-8'>
+          <div className='flex gap-4 items-center mt-20'>
             <p className='text-xl tracking-wider'>#Corbins</p>
               <div className='flex gap-5 items-center'>
               <AiFillInstagram size={22}/>

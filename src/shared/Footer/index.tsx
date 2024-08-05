@@ -8,7 +8,7 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const index = () => {
   return (
-    <main className={`relative bottom-0 flex justify-between p-12 text-white bg-black h-auto ${mainFont.className} flex-1 border-t border-gray-800`}>
+    <main className={`relative w-full bottom-0 flex justify-between p-12 text-white bg-black h-auto ${mainFont.className} flex-1 border-t border-gray-800`}>
         <section className="flex-[.3] flex flex-col items-center gap-4">
             <h1 className='text-2xl font-medium '>Contact</h1>
             <Divider className='bg-gray-500 my-2 w-3/5'/>
