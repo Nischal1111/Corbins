@@ -1,23 +1,15 @@
 import { mainFont, subFont } from '@/app/layout'
 import React from 'react'
 import Image from 'next/image'
+import { AiFillInstagram } from 'react-icons/ai'
+import { FaFacebook, FaTwitter } from 'react-icons/fa'
+import { IoMdMail } from 'react-icons/io'
 
 const MainSection = () => {
   return (
     <article className={`flex w-full px-12 gap-24 ${mainFont.className} relative`}>
-      <main className='relative top-[-22vh] flex flex-col flex-start w-[50%]'>
-
-        <section className='relative left-24'>
-          <div className='w-[30vw] h-[45vh] bg-[#F2F2F2] rounded-sm px-8 py-6 text-black'>
-              <div className='mt-5 flex items-center gap-5'>
-                <h1 className='text-3xl text-[#676666]'>Our story</h1>
-                <div className='w-20 h-[1px] bg-[#676666]'></div>
-              </div>
-              <p className='text-sm leading-6 tracking-wider mt-4 text-justify'>Corbin's, established in 2016, has been delighting customers with its unique and flavorful dishes. Our passion for culinary excellence drives us to create memorable dining experiences. Join us and savor the taste of our carefully crafted menu. Each dish is a testament to our commitment to quality, made with fresh, locally sourced ingredients. Come and experience the warmth and hospitality that make Corbin's a beloved culinary destination.</p>
-          </div>
-        </section>
-
-        <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full h-full mt-20'/>
+      <main className='relative flex flex-col flex-start w-[50%] mb-8'>
+        <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full h-80% mt-[40%]'/>
 
         <div className='py-12'>
           <div className='mt-5 flex items-center gap-5'>
@@ -31,13 +23,13 @@ const MainSection = () => {
           </p>
         </div>
 
-        <Image src="/assets/about-food.avif" alt='about-food' height={1000} width={1000} className='w-full mt-[30%] h-full'/>
+        <Image src="/assets/about-food.avif" alt='about-food' height={1000} width={1000} className='w-full mt-[20%] h-[70vh]'/>
 
       </main>
 
         {/* right section  */}
 
-      <main className='w-[50%] flex flex-col'>
+      <main className='w-[50%] flex flex-col relative'>
 
         <Image src="/assets/chef.avif" alt='chef' height={1000} width={1000} className='w-full h-[25%] mt-16 object-cover'/>
 
@@ -57,7 +49,28 @@ const MainSection = () => {
           </p>
         </div>
 
-        <Image src="/assets/about3.webp" alt="image1" height={1000} width={1000} className='w-full h-[65vh] mt-6 object-cover'/>
+        <Image src="/assets/about3.webp" alt="image1" height={1000} width={1000} className='w-full h-[70vh] mt-6 object-cover'/>
+
+        <div className='py-12 flex justify-center flex-col'>
+          <div className='mt-5 flex items-center gap-5'>
+                <h1 className='text-3xl text-white'>Our Socials</h1>
+                <div className='w-20 h-[1px] bg-white'></div>
+          </div>
+          <p className='text-sm leading-6 tracking-wider mt-6 text-justify text-gray-300 w-[90%]'>
+            Stay connected with Corbin's through our social media channels! Follow us for the latest updates, mouth-watering photos, and behind-the-scenes glimpses of our culinary 
+            creations. Join our community and be the first to know about special events, new menu items, and exclusive promotions.
+          </p>
+
+          <div className='flex gap-4 items-center mt-8'>
+            <p className='text-xl tracking-wider'>#Corbins</p>
+              <div className='flex gap-5 items-center'>
+              <AiFillInstagram size={22}/>
+              <FaFacebook size={22}/>
+              <IoMdMail size={22}/>
+              <FaTwitter size={22}/>
+            </div>
+          </div>
+        </div>
 
       </main>
     </article>

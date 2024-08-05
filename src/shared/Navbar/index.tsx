@@ -41,7 +41,9 @@ const Nav = () => {
             </section>
 
             <section className='ml-[-11rem]'>
-                <h2 className="text-4xl font-extrabold">COR-BINS</h2>
+                <Link href="/">
+                    <h2 className="text-4xl font-extrabold">COR-BINS</h2>
+                </Link>
             </section>
 
             <section>
