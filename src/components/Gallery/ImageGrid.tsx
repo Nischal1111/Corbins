@@ -11,16 +11,16 @@ const ImageGrid = () => {
         img5:`/assets/gallery/gallery5.avif`,
         img6:`/assets/gallery/gallery6.avif`,
         img7:`/assets/gallery/gallery7.webp`,
-        img8:`/assets/gallery/gallery8.webp`,
+        img8:`/assets/gallery/gallery8.avif`,
     }
   return (
     <main className='my-8 flex items-center justify-center flex-col'>
-        <div className='flex gap-3 flex-[1]'>
-            <div className='flex flex-col flex-[.5]'>
+        <div className='flex gap-3 w-full'>
+            <div className='flex flex-col w-[45%]'>
                 <Image src={images.img1} alt='img1' height={1000} width={1000} className='h-[250px] w-full  object-cover'/>
                 <Image src={images.img2} alt='img1' height={1000} width={1000} className='h-[250px] w-full object-cover mt-3'/>
             </div>
-            <div className='flex gap-3 flex-[.5]'>
+            <div className='flex gap-3 w-[55%]'>
                 <Image src={images.img3} alt='img1' height={1000} width={1000} className='h-[512px] w-1/2 object-cover'/>
                 <Image src={images.img4} alt='img1' height={1000} width={1000} className='h-[512px] w-1/2 object-cover'/>
             </div>
