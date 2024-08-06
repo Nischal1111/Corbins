@@ -25,3 +25,24 @@
 .custom-nav.active:after {
     width: 100%;
 }
+
+.custom-menu-bg{
+    background-image: url("/assets/menus/menu-bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.custom-about-bg{
+    background-image: url("/assets/aboutcorbins.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
+.custom-about-section{
+    background-image: url("/assets/about2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
+

@@ -7,7 +7,7 @@ import Footer from "@/shared/Footer"
 import { NextUIProvider } from "@nextui-org/system";
 
 
-const inter = Inter({ subsets: ["latin"] });
+export const inter = Inter({ subsets: ["latin"] });
 
 export const subFont = Life_Savers({ 
     weight: "400",

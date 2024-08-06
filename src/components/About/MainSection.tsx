@@ -9,7 +9,8 @@ const MainSection = () => {
   return (
     <article className={`flex w-full px-12 gap-24 ${mainFont.className} relative -mb-20`}>
       <main className='relative flex flex-col flex-start w-[50%]'>
-        <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full h-80% mt-[40%]'/>
+        
+        <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full h-80% mt-[40%] object-cover'/>
 
         <div className='py-12'>
           <div className='mt-5 flex items-center gap-5'>
@@ -23,7 +24,7 @@ const MainSection = () => {
           </p>
         </div>
 
-        <Image src="/assets/about-food.avif" alt='about-food' height={1000} width={1000} className='w-full mt-[20%] h-[70vh]'/>
+        <Image src="/assets/about-food.avif" alt='about-food' height={1000} width={1000} className='w-full mt-[20%] h-[70vh] object-cover'/>
 
       </main>
 
@@ -31,7 +32,8 @@ const MainSection = () => {
 
       <main className='w-[50%] flex flex-col relative'>
 
-        <Image src="/assets/chef.avif" alt='chef' height={1000} width={1000} className='w-full h-[25%] mt-16 object-cover'/>
+          <Image src="/assets/chef.avif" alt='chef' height={1000} width={1000} className='w-full h-[25%] mt-16 object-cover'/>
+
 
         <div className='py-12'>
           <div className='mt-5 flex items-center gap-5'>
