@@ -6,26 +6,6 @@ const MainSection = () => {
   return (
     <main className={`mt-16 justify-center flex flex-col items-center ${mainFont.className}`}>
 
-        {/* <section className='flex items-center justify-between w-[90%] h-[40vh] gap-1'>
-            <div className='w-1/3 h-full rounded-lg'>
-                <Image src="/assets/menus/section1.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
-            </div>
-            <section className={`w-1/3 h-full ${mainFont.className}`}>
-                <div className='w-full rounded-sm px-8 py-6 border-x-1' style={{backgroundColor:"rgba(0,0,0,.8)"}}>
-                <div className='mt-5 flex items-center gap-5'>
-                    <h1 className='text-xl text-white'>Our Menu</h1>
-                    <div className='w-20 h-[1px] bg-white'></div>
-                </div>
-                <p className='text-sm leading-7 tracking-wider mt-4 text-justify'>
-                    Our menu is a journey through a world of flavors, carefully crafted to delight every palate. We take pride in offering a diverse selection of dishes, from timeless classics to innovative delicacies. Each item on our menu is prepared with the finest ingredients and utmost attention to detail, ensuring an exceptional dining experience.
-                </p>
-                </div>
-            </section>
-            <div className='w-1/3 h-full rounded-lg'>
-                <Image src="/assets/menus/section2.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
-            </div>
-        </section> */}
-
         <section className='flex w-[90%] relative mt-[10rem] mb-[4rem] h-[50vh] items-center'>
             <main className='w-[60%]'>
                 <Image src="/assets/menus/food-menu.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
