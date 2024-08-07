@@ -29,6 +29,7 @@
 .custom-menu-bg{
     background-image: url("/assets/menus/menu-bg.avif");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -36,13 +37,36 @@
 .custom-about-bg{
     background-image: url("/assets/aboutcorbins.webp");
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         background-attachment: fixed;
 }
-.custom-about-section{
-    background-image: url("/assets/about2.jpg");
+.custom-home-bg{
+    background-image: url("/assets/home.jpeg");
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+}
+
+.custom-home-scroll1{
+    background-image: url("/assets/home/scroll1.avif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        background-attachment: fixed;
+}
+.custom-home-scroll2{
+    background-image: url("/assets/home/scroll2.avif");
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         background-attachment: fixed;
 }
 
+.custom-coffee{
+    background-image: url("/assets/home/coffee.jpg");
+    background-size: cover;
+    background-position: right;
+}

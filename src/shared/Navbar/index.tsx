@@ -47,9 +47,11 @@ const Nav = () => {
             </section>
 
             <section>
-                <button className='rounded-sm py-2 px-8 border border-white hover:bg-white hover:text-black transition-all duration-500'>
-                    Book Now
-                </button>
+                <Link href="https://www.opentable.com.au/restref/client/?lang=en-AU&ot_source=Restaurant%20website&restref=162221&corrid=4f9ca6c2-719c-46cb-a632-f752d93d8795" target='_blank'>
+                    <button className='rounded-sm py-2 px-8 border border-white hover:bg-white hover:text-black transition-all duration-500'>
+                        Book Now
+                    </button>
+                </Link>
             </section>
         </main>
     );
