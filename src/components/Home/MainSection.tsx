@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { mainFont } from '@/app/layout'
 
+
 const MainSection = () => {
   return (
     <main className={`mt-[8rem] ${mainFont.className} flex items-center flex-col justify-center`}>
@@ -33,37 +34,57 @@ const MainSection = () => {
 
         <article className='h-[80vh] w-full custom-home-scroll1 mb-[1rem] relative flex items-center justify-center z-[99]'>
 
-            <div className='flex flex-[1] items-center gap-8 absolute black rounded-lg shadow-2xl h-auto w-[70%] z-[100] bg-[rgba(0,0,0,.9)] p-16 top-[80%] custom-coffee'>
-                <div className='flex-[.7]'>
+            <div className='flex w-[80%] items-center justify-center gap-8 absolute black rounded-lg shadow-2xl h-auto z-[100] bg-[rgba(0,0,0,.9)] p-16 top-[60%] custom-coffee'>
+                <div className=''>
                     <div className='mt-5 flex items-center gap-5'>
                         <h1 className='text-3xl text-white font-bold'>Corbin's: Where Every Bite Tells a Story</h1>
                         <div className='w-40 h-[1px] bg-white'></div>
                     </div>
-                    <p className=' mt-8'>
+                    <p className='text-justify mt-8'>
                         Welcome to Corbin's, where exceptional dining meets warm hospitality. Our menu features a harmonious blend of classic and contemporary flavors, crafted 
                         with the finest ingredients to ensure every meal is a memorable experience. At Corbin's, we believe in creating more than just delicious food.
                     </p>
                     <button className='bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Explore Menu</button>
                 </div>
-            
-                <div className='flex-[.3] h-auto'>
-                    {/* <Image src="/assets/home/menu-scroll.jpg" alt='food' height={1000} width={1000} className='w-full h-full object-cover mix-blend-normal'/> */}
-                </div>
             </div>
         </article>
-        <article className='h-[80vh] w-full custom-home-scroll2 relative mt-[6rem]'>
+
+        <article className='h-[90vh] w-full custom-home-scroll2 relative mt-[6rem]'>
         </article>
 
-        <article className='mt-[6rem] mb-12 flex relative w-[70%] items-center justify-center flex-col'>
+        <article className='flex h-[90vh] w-full mt-16 mb-12'>
 
-            <Image src="/assets/home/reserve-home.avif" alt='reserv' height={1000} width={1000} className='h-[90vh] object-cover w-1/2 rounded-lg shadow-lg self-center relative right-16 reserve-home' />
-            <div className='z-[10] absolute left-[12%] w-full flex flex-col top-[15%]'>
-                <p className='text-[4rem] font-extralight tracking-[12px] leading-9 relative left-[5%]'>Make a Reservation</p>
-                <button className='w-fit -right-[58%] bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-12 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Make a reservation</button>
-                <p className='text-[4rem] font-extralight tracking-[12px] leading-9 mt-[10%] relative right-[10%]'>Contact Us</p>
-                <button className='w-fit right-[9%] bg-transparent border border-white text-white rounded-sm py-3 px-8 mt-12 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Contact Us</button>
-                <p className='text-[4rem] font-extralight tracking-[12px] leading-9 relative left-[35%] mt-[10%]'>View Gallery</p>
-                <button className='w-fit -right-[68%] bg-transparent border border-white text-white rounded-sm py-3 px-10 mt-12 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Gallery</button>
+            <div className='w-1/2'>
+                <Image src={"/assets/home/findus.jpg"} alt='findUS' height={1000} width={1000} className='h-full w-full object-cover'/>
+            </div>
+
+
+            <div className='w-1/2 p-8 flex flex-col gap-12 items-center justify-center bg-[rgb(10,11,10)]'>
+                <h1 className='text-4xl font-bold tracking-widest'>Find Us</h1>
+
+                <div className='flex items-center justify-center flex-col gap-8'>
+                    <h1 className='font-extrabold text-lg'>WHERE</h1>
+                    <p className='text-base font-extralight text-center'>34 Duporth Avenue,<br />
+                    Maroochydore, Queensland</p>
+                    <div className='flex gap-3'>
+                        <button className='text-xs font-extralight bg-[rgba(255,255,255,.8)] tracking-wider px-6 py-2 text-black'>
+                            VIEW MAP
+                        </button>
+                        <button className='text-xs font-extralight bg-black tracking-wider border border-white px-6 py-2 text-white'>
+                            BOOK A TABLE
+                        </button>
+                    </div>
+                </div>
+
+                <div className='flex items-center justify-center flex-col gap-8'>
+                    <h1 className='font-extrabold text-lg'>WHEN</h1>
+                    <div className='flex gap-3 items-center justify-center'>
+                <p className='text-base text-center'>Tuesday to Thursday <br /> 12PM-Late</p>
+              </div>
+              <div className='flex gap-3 items-center  justify-center'>
+                <p className='text-base text-center'>Friday and Saturday <br /> 12PM to LATE</p>
+              </div>
+                </div>
             </div>
         </article>
     </main>

@@ -1,5 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
+import { Image } from '@nextui-org/react'
 
 
 const ImageGrid = () => {
@@ -14,24 +15,32 @@ const ImageGrid = () => {
         img8:`/assets/gallery/gallery8.avif`,
     }
   return (
-    <main className='my-8 flex items-center justify-center flex-col'>
+    <main className='my-8 flex items-center justify-center flex-col w-full'>
         <div className='flex gap-3 w-full'>
             <div className='flex flex-col w-[45%]'>
-                <Image src={images.img1} alt='img1' height={1000} width={1000} className='h-[250px] w-full  object-cover'/>
-                <Image src={images.img2} alt='img1' height={1000} width={1000} className='h-[250px] w-full object-cover mt-3'/>
+                <Image isZoomed src={images.img1} alt='img1' width='100%' className='h-[250px] flex-1 object-cover'/>
+                <Image isZoomed src={images.img2} alt='img1' width='100%' className='h-[250px] flex-1  object-cover mt-3'/>
             </div>
             <div className='flex gap-3 w-[55%]'>
-                <Image src={images.img3} alt='img1' height={1000} width={1000} className='h-[512px] w-1/2 object-cover'/>
-                <Image src={images.img4} alt='img1' height={1000} width={1000} className='h-[512px] w-1/2 object-cover'/>
+                <Image isZoomed src={images.img3} alt='img1' className='h-[512px] object-cover'/>
+                <Image isZoomed src={images.img4} alt='img1' className='h-[512px] object-cover'/>
             </div>
         </div>
-        <div className='flex gap-3 mt-3 flex-[1]'>
-            <Image src={images.img5} alt='img1' height={1000} width={1000} className='h-[300px]  flex-[.7] object-cover'/>
-            <Image src={images.img6} alt='img1' height={1000} width={1000} className='h-[300px] flex-[.3] object-cover'/>
+        <div className='flex gap-3 mt-3 w-full'>
+            <div className='w-[70%]'>
+                <Image isZoomed src={images.img5} alt='img1' width='100%' className='h-[300px]   object-cover'/>
+            </div>
+            <div className='w-[30%]'>
+                <Image isZoomed src={images.img6} alt='img1' width='100%' className='h-[300px]  object-cover'/>
+            </div>
         </div>
-        <div className='flex gap-3 mt-3 flex-[1]'>
-            <Image src={images.img7} alt='img1' height={1000} width={1000} className='h-[300px] flex-[.3] object-cover'/>
-            <Image src={images.img8} alt='img1' height={1000} width={1000} className='h-[300px]  flex-[.7] object-cover'/>
+        <div className='flex gap-3 mt-3  w-full'>
+            <div className='w-[30%]'>
+                <Image isZoomed src={images.img7} alt='img1' width='100%' className='h-[300px]   object-cover'/>
+            </div>
+            <div className='w-[70%]'>
+                <Image isZoomed src={images.img8} alt='img1' width='100%' className='h-[300px]  object-cover'/>
+            </div>
         </div>
     </main>
   )

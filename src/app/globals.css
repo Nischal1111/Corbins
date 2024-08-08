@@ -67,7 +67,7 @@
 
 .custom-coffee {
     position: relative;
-    width: 70%;
+    width: 80%;
 }
 
 .custom-coffee::before {
@@ -78,29 +78,30 @@
     justify-content: center;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 80%;
     height: 100%;
     background-image: url("/assets/home/coffee.jpg");
     background-size: cover;
     background-position: right;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
 }
 
-.reserve-home{
+.reserve-home {
     animation: updown 10s linear infinite;
 }
 
+
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
 
     50% {
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
 
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
 }
