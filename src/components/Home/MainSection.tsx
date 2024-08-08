@@ -55,10 +55,15 @@ const MainSection = () => {
         </article>
 
         <article className='mt-[6rem] mb-12 flex relative w-[70%] items-center justify-center flex-col'>
-            <Image src="/assets/home/reserve-home.avif" alt='reserv' height={1000} width={1000} className='h-[80vh] object-cover w-1/2 rounded-lg shadow-lg self-center relative right-16 reserve-home' />
-            <div className='z-[10] absolute left-[12%] w-full flex flex-col top-[35%]'>
-                <p className='text-[4rem] font-extralight tracking-[12px] leading-9'>Make a Reservation</p>
+
+            <Image src="/assets/home/reserve-home.avif" alt='reserv' height={1000} width={1000} className='h-[90vh] object-cover w-1/2 rounded-lg shadow-lg self-center relative right-16 reserve-home' />
+            <div className='z-[10] absolute left-[12%] w-full flex flex-col top-[15%]'>
+                <p className='text-[4rem] font-extralight tracking-[12px] leading-9 relative left-[5%]'>Make a Reservation</p>
                 <button className='w-fit -right-[58%] bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-12 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Make a reservation</button>
+                <p className='text-[4rem] font-extralight tracking-[12px] leading-9 mt-[10%] relative right-[10%]'>Contact Us</p>
+                <button className='w-fit right-[9%] bg-transparent border border-white text-white rounded-sm py-3 px-8 mt-12 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Contact Us</button>
+                <p className='text-[4rem] font-extralight tracking-[12px] leading-9 relative left-[35%] mt-[10%]'>View Gallery</p>
+                <button className='w-fit -right-[68%] bg-transparent border border-white text-white rounded-sm py-3 px-10 mt-12 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Gallery</button>
             </div>
         </article>
     </main>
