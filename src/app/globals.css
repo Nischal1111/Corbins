@@ -65,8 +65,42 @@
         background-attachment: fixed;
 }
 
-.custom-coffee{
+.custom-coffee {
+    position: relative;
+    width: 70%;
+}
+
+.custom-coffee::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
     background-image: url("/assets/home/coffee.jpg");
     background-size: cover;
     background-position: right;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.reserve-home{
+    animation: updown 10s linear infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }

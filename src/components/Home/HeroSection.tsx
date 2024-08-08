@@ -13,7 +13,7 @@ const HeroSection = () => {
                     <div className='w-[8rem] h-[2px] bg-gray-300'></div>
                 </div>
                 <p className='text-lg font-normal tracking-wider mt-8 leading-6 w-3/5 text-center'>Corbin's: Where flavor meets unique culinary adventure. Indulge in expertly crafted dishes that blend tradition.</p>
-                <button className='bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative -left-8 tracking-widest text-base hover:bg-white hover:text-black duration-500'>Make a reservation</button>
+                <button className='bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Make a reservation</button>
             </div>
         </div>
     </div>

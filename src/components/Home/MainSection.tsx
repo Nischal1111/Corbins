@@ -4,7 +4,7 @@ import { mainFont } from '@/app/layout'
 
 const MainSection = () => {
   return (
-    <main className={`mt-[8rem] ${mainFont.className}`}>
+    <main className={`mt-[8rem] ${mainFont.className} flex items-center flex-col justify-center`}>
         <article className='flex gap-8 w-full flex-[1]'>
             <section className='flex-[.5] flex relative' >
                 <Image src="/assets/home/homeSection2.avif" alt='home' height={1000} width={1000} className='relative left-12 rounded-md w-[70%] h-3/5 object-cover'/>
@@ -31,7 +31,7 @@ const MainSection = () => {
             </section>
         </article>
 
-        <article className='h-[90vh] w-full custom-home-scroll1 mb-[1rem] relative flex items-center justify-center z-[99]'>
+        <article className='h-[80vh] w-full custom-home-scroll1 mb-[1rem] relative flex items-center justify-center z-[99]'>
 
             <div className='flex flex-[1] items-center gap-8 absolute black rounded-lg shadow-2xl h-auto w-[70%] z-[100] bg-[rgba(0,0,0,.9)] p-16 top-[80%] custom-coffee'>
                 <div className='flex-[.7]'>
@@ -51,7 +51,15 @@ const MainSection = () => {
                 </div>
             </div>
         </article>
-        <article className='h-[90vh] w-full custom-home-scroll2 relative mt-[5rem]'>
+        <article className='h-[80vh] w-full custom-home-scroll2 relative mt-[6rem]'>
+        </article>
+
+        <article className='mt-[6rem] mb-12 flex relative w-[70%] items-center justify-center flex-col'>
+            <Image src="/assets/home/reserve-home.avif" alt='reserv' height={1000} width={1000} className='h-[80vh] object-cover w-1/2 rounded-lg shadow-lg self-center relative right-16 reserve-home' />
+            <div className='z-[10] absolute left-[12%] w-full flex flex-col top-[35%]'>
+                <p className='text-[4rem] font-extralight tracking-[12px] leading-9'>Make a Reservation</p>
+                <button className='w-fit -right-[58%] bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-12 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Make a reservation</button>
+            </div>
         </article>
     </main>
   )
