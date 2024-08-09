@@ -55,7 +55,7 @@ const Nav = () => {
     return (
         <>
             {/* Small Header */}
-            <header className={`h-10 ${scrolled ? 'bg-black' : 'bg-transparent'} text-white text-sm px-8 flex justify-between items-center py-3 fixed top-0 left-0 w-full z-[100] border-b-[0.1px] border-gray-800 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
+            <header className={`h-10 ${scrolled ? 'bg-[rgb(21,22,21)]' : 'bg-transparent'} text-white text-sm px-8 flex justify-between items-center py-3 fixed top-0 left-0 w-full z-[100] border-b-[0.1px] border-gray-800 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
                 <div className="flex items-center">
                     <span className="mr-4">info@corbins.com</span>
                     <span>+123 456 7890</span>

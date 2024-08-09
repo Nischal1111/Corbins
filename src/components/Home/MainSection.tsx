@@ -55,7 +55,9 @@ const MainSection = () => {
         <article className='flex h-[90vh] w-full mt-16 mb-12'>
 
             <div className='w-1/2'>
-                <Image src={"/assets/home/findus.jpg"} alt='findUS' height={1000} width={1000} className='h-full w-full object-cover'/>
+                <div className='custom-findUs h-[90vh] w-[50vw]'>
+                    {/* <Image src={"/assets/home/findus.jpg"} alt='findUS' height={1000} width={1000} className='h-full w-full object-cover'/> */}
+                </div>
             </div>
 
 
@@ -79,10 +81,10 @@ const MainSection = () => {
                 <div className='flex items-center justify-center flex-col gap-8'>
                     <h1 className='font-extrabold text-lg'>WHEN</h1>
                     <div className='flex gap-3 items-center justify-center'>
-                <p className='text-base text-center'>Tuesday to Thursday <br /> 12PM-Late</p>
+                <p className='text-base text-center font-extralight'>Tuesday to Thursday <br /> 12PM-Late</p>
               </div>
               <div className='flex gap-3 items-center  justify-center'>
-                <p className='text-base text-center'>Friday and Saturday <br /> 12PM to LATE</p>
+                <p className='text-base text-center font-extralight'>Friday and Saturday <br /> 12PM to LATE</p>
               </div>
                 </div>
             </div>
