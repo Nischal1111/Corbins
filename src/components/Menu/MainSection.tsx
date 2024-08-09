@@ -4,9 +4,9 @@ import { mainFont } from '@/app/layout'
 
 const MainSection = () => {
   return (
-    <main className={`mt-16 justify-center flex flex-col items-center ${mainFont.className}`}>
+    <main className={`my-4 justify-center flex flex-col items-center ${mainFont.className}`}>
 
-        <section className='flex w-[90%] relative mt-[10rem] mb-[4rem] h-[50vh] items-center'>
+        <section className='flex w-[90%] relative mt-[6rem] mb-[4rem] h-[50vh] items-center'>
             <main className='w-[60%]'>
                 <Image src="/assets/menus/food-menu.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
             </main>

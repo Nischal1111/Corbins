@@ -22,7 +22,7 @@
 }
 
 .custom-button {
-    outline-offset: -4px;
+    outline-offset: -3px;
     outline: 1px solid black;
 }
 
@@ -36,10 +36,10 @@
 }
 
 .custom-menu-bg{
-    background-image: url("/assets/menus/menu-bg.avif");
+    background-image: url("/assets/menus/section2.avif");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position:center;
+    background-size:cover;
     background-attachment: fixed;
 }
 

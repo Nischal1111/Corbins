@@ -32,7 +32,7 @@ const MainSection = () => {
             </section>
         </article>
 
-        <article className='h-[80vh] w-full custom-home-scroll1 mb-[1rem] relative flex items-center justify-center z-[99]'>
+        <article className='h-[90vh] w-full custom-home-scroll1 mb-[1rem] relative flex items-center justify-center z-[99]'>
 
             <div className='flex w-[80%] items-center justify-center gap-8 absolute black rounded-lg shadow-2xl h-auto z-[100] bg-[rgba(0,0,0,.9)] p-16 top-[60%] custom-coffee'>
                 <div className=''>
@@ -69,11 +69,11 @@ const MainSection = () => {
                     <p className='text-base font-extralight text-center'>34 Duporth Avenue,<br />
                     Maroochydore, Queensland</p>
                     <div className='flex gap-3'>
-                        <button className='text-xs font-extralight bg-[rgba(255,255,255,.8)] tracking-wider px-6 py-2 text-black'>
-                            VIEW MAP
+                        <button className='text-sm font-extralight bg-[rgba(255,255,255,.8)] tracking-widest px-7 py-3 text-black'>
+                            View map
                         </button>
-                        <button className='text-xs font-extralight bg-black tracking-wider border border-white px-6 py-2 text-white'>
-                            BOOK A TABLE
+                        <button className='text-sm font-extralight bg-black tracking-widest border border-white px-7 py-3 text-white'>
+                            Book a table
                         </button>
                     </div>
                 </div>

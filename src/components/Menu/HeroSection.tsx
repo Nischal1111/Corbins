@@ -14,10 +14,10 @@ const HeroSection = () => {
             </div>
         </div>
         <div className='h-[90vh] w-full rounded-lg mt-8 custom-menu-bg relative'>
-            <div className={`absolute right-[10%] ${mainFont.className} w-2/5 top-1/4`}>
-                <h1 className='text-5xl font-semibold tracking-widest'>Our Menu: Culinary Delights Await.</h1>
-                <p className='text-lg font-normal tracking-wide mt-6'>Explore a curated selection of exquisite dishes, each crafted to tantalize your taste buds. Discover your next favorite meal with our diverse and delicious menu offerings.</p>
-                <button className='bg-gray-500 text-white rounded-sm py-4 px-6 mt-8 tracking-widest text-sm hover:bg-gray-700 duration-500'>See menu below</button>
+            <div className={`absolute right-[5%] ${mainFont.className} w-2/5 top-1/4`}>
+                <h1 className='text-4xl font-semibold tracking-widest'>Our Menu: Culinary Delights Await.</h1>
+                <p className='text-lg font-extralight leading-7 tracking-wide mt-6 text-justify'>Explore a curated selection of exquisite dishes, each crafted to tantalize your taste buds. Discover your next favorite meal with our diverse and delicious menu offerings.</p>
+                <button className='bg-gray-300 text-black rounded-sm py-3 px-6 mt-8 tracking-widest text-sm hover:bg-gray-400 hover:text-white duration-500'>See menu below</button>
             </div>
         </div>
     </div>

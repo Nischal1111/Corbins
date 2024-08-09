@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter,Life_Savers,Baskervville } from "next/font/google";
 import "./globals.css";
-import SectionWrapper from "@/hoc/SectionWrapper";
 import Nav from "@/shared/Navbar";
 import Footer from "@/shared/Footer"
 import { NextUIProvider } from "@nextui-org/system";
+import ScrollToTop from "@/shared/ScrollToTop";
 
 
 export const inter = Inter({ subsets: ["latin"] });
@@ -37,6 +37,7 @@ export default function RootLayout({
         <NextUIProvider>
           {/* <SectionWrapper> */}
             <Nav/>
+            <ScrollToTop/>   
             {children}
             <Footer/>
           {/* </SectionWrapper> */}

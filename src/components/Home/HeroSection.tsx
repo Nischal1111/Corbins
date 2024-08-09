@@ -1,4 +1,5 @@
 import { mainFont, subFont } from '@/app/layout'
+import Link from 'next/link'
 import React from 'react'
 import { BsDash } from 'react-icons/bs'
 
@@ -13,7 +14,10 @@ const HeroSection = () => {
                     <div className='w-[8rem] h-[2px] bg-gray-300'></div>
                 </div>
                 <p className='text-lg font-normal tracking-wider mt-8 leading-6 w-3/5 text-center'>Corbin's: Where flavor meets unique culinary adventure. Indulge in expertly crafted dishes that blend tradition.</p>
-                <button className='bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Make a reservation</button>
+                <Link href="https://www.opentable.com.au/restref/client/?lang=en-AU&ot_source=Restaurant%20website&restref=162221&corrid=4f9ca6c2-719c-46cb-a632-f752d93d8795" target='_blank'>
+                  <button className='custom-button bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Make a reservation</button>
+                </Link>
+
             </div>
         </div>
     </div>
