@@ -6,9 +6,8 @@ import Image from 'next/image'
 const HeroSection = () => {
   return (
     <>
-    <div className={`${subFont.className} pt-[6rem] w-full flex justify-center flex-col`}>
+    <div className={`${subFont.className} w-full flex justify-center flex-col`}>
         <div className='flex flex-col justify-center items-center'>
-            <h3 className={`text-gray-400`}>Home{" > "}Menus</h3>
             <div className='mt-5 flex items-center gap-5'>
                 <h1 className='text-2xl'>Menus</h1>
                 <div className='w-20 h-[1px] bg-gray-400'></div>

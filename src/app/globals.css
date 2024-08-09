@@ -21,6 +21,15 @@
     transition: all 0.5s ease;
 }
 
+.custom-button {
+    outline-offset: -4px;
+    outline: 1px solid black;
+}
+
+.custom-button:hover {
+    outline:1px solid black;
+}
+
 .custom-nav:hover:after,
 .custom-nav.active:after {
     width: 100%;
@@ -38,19 +47,19 @@
     background-image: url("/assets/aboutcorbins.webp");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-attachment: fixed;
 }
 .custom-home-bg{
     background-image: url("/assets/home.jpeg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-attachment: fixed;
 }
 
 .custom-home-scroll1{
-    background-image: url("/assets/home/scroll1.avif");
+    background-image: url("/assets/home/wine-scroll.avif");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -67,7 +76,7 @@
 .custom-findUs{
     background-image: url("/assets/home/findus.jpg");
         background-repeat: no-repeat;
-        background-position:center;
+        background-position:left;
         background-size: contain;
         background-attachment: fixed;
 }

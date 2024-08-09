@@ -4,7 +4,7 @@ import MainSection from './MainSection'
 
 const About = () => {
   return (
-    <main className='text-white px-12'>
+    <main className='text-white px-16'>
       <HeroSection/>
       <MainSection/>
     </main>

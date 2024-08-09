@@ -52,16 +52,16 @@ const MainSection = () => {
         <article className='h-[90vh] w-full custom-home-scroll2 relative mt-[6rem]'>
         </article>
 
-        <article className='flex h-[90vh] w-full mt-16 mb-12'>
+        <article className='flex  w-full mt-16 mb-12'>
 
             <div className='w-1/2'>
-                <div className='custom-findUs h-[90vh] w-[50vw]'>
+                <div className='custom-findUs h-[80vh] w-[50vw]'>
                     {/* <Image src={"/assets/home/findus.jpg"} alt='findUS' height={1000} width={1000} className='h-full w-full object-cover'/> */}
                 </div>
             </div>
 
 
-            <div className='w-1/2 p-8 flex flex-col gap-12 items-center justify-center bg-[rgb(10,11,10)]'>
+            <div className='w-1/2  p-8 flex flex-col gap-12 items-center justify-center bg-[rgb(10,11,10)]'>
                 <h1 className='text-4xl font-bold tracking-widest'>Find Us</h1>
 
                 <div className='flex items-center justify-center flex-col gap-8'>

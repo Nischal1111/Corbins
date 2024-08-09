@@ -4,7 +4,7 @@ import { BsDash } from 'react-icons/bs'
 
 const HeroSection = () => {
   return (
-    <div className={`${subFont.className} pt-[6rem] w-full flex justify-center flex-col`}>
+    <div className={`${subFont.className} w-full flex justify-center flex-col`}>
         <div className='h-[90vh] w-full rounded-lg mt-8 custom-home-bg relative'>
             <div className={`absolute ${mainFont.className} w-full top-1/3 flex flex-col items-center justify-center`}>
                 <div className='flex items-center text-white gap-6'>

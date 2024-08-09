@@ -3,46 +3,18 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { mainFont, subFont } from '@/app/layout';
 import { usePathname } from 'next/navigation';
-import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaTwitter, FaFacebook } from 'react-icons/fa';
+import { IoCall } from 'react-icons/io5';
+import { IoMdMail } from 'react-icons/io';
+import { AiFillInstagram } from 'react-icons/ai';
+import { Divider } from '@nextui-org/react';
+
+
 
 const Nav = () => {
+    
     const pathname = usePathname();
-    const [scrolled, setScrolled] = useState(false);
-    const [visible, setVisible] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
 
-    // Handle transparency based on scroll position
-    const handleTransparency = (scrollY:number) => {
-        const scrollThreshold = window.innerHeight ;
-        if (scrollY > scrollThreshold) {
-            setScrolled(true);
-        } else {
-            setScrolled(false);
-        }
-    };
-
-    // Handle visibility based on scroll direction
-    const handleVisibility = (scrollY:number) => {
-        if (scrollY > lastScrollY && scrollY > window.innerHeight / 3) {
-            setVisible(false);
-        } else {
-            setVisible(true);
-        }
-        setLastScrollY(scrollY);
-    };
-
-    const handleScroll = () => {
-        const scrollY = window.scrollY;
-        handleTransparency(scrollY);
-        handleVisibility(scrollY);
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [lastScrollY]);
 
     const navItems = [
         { title: "Home", link: "/" },
@@ -54,51 +26,62 @@ const Nav = () => {
 
     return (
         <>
-            {/* Small Header */}
-            <header className={`h-10 ${scrolled ? 'bg-[rgb(21,22,21)]' : 'bg-transparent'} text-white text-sm px-8 flex justify-between items-center py-3 fixed top-0 left-0 w-full z-[100] border-b-[0.1px] border-gray-800 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
-                <div className="flex items-center">
-                    <span className="mr-4">info@corbins.com</span>
-                    <span>+123 456 7890</span>
-                </div>
-                <div className="flex items-center gap-4">
-                    <Link href="https://www.instagram.com" target="_blank">
-                        <FaInstagram />
-                    </Link>
-                    <Link href="https://www.facebook.com" target="_blank">
-                        <FaFacebookF />
-                    </Link>
-                    <Link href="https://www.twitter.com" target="_blank">
-                        <FaTwitter />
-                    </Link>
-                </div>
-            </header>
+            <main className={`mt-2 bg-transparent w-full flex items-center z-[100] px-8 py-3 justify-between text-white ${subFont.className} transition-transform duration-300`}>
 
-            {/* Navbar */}
-            <main className={`h-16 ${scrolled ? 'bg-black' : 'bg-transparent'} w-full flex items-center z-[100] px-8 py-3 justify-between text-white ${subFont.className} fixed top-10 left-0 border-b-[0.1px] border-gray-400 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-[2.5rem]'}`}>
-                <section className="flex gap-5 items-center text-base capitalize relative">
-                    {navItems.map((item) => (
-                        <Link href={item.link} key={item.title}>
-                            <p className={`${pathname === item.link ? "active" : ""} custom-nav text-base`}>{item.title}</p>
+                <section className='flex flex-col gap-6'>
+                    <div className='flex gap-3 items-center justify-self-start'>
+                        <IoCall size={15}/>
+                        <p className='text-sm'>(07) 5326 1022</p>
+                    </div>
+                    <div className='flex gap-3 items-center justify-self-start'>
+                        <IoMdMail size={15}/>
+                        <p className='text-sm'>info@corbins.com.au</p>
+                    </div>
+                </section>
+
+                <section className='flex flex-col items-center justify-center gap-3'>
+                    <section>
+                        <Link href="/">
+                            <h2 className="text-3xl font-extrabold">COR-BINS</h2>
                         </Link>
-                    ))}
+                    </section>
+
+                    <section className="flex gap-5 items-center text-base capitalize relative mt-3">
+                        {navItems.map((item) => (
+                            <Link href={item.link} key={item.title}>
+                                <p className={`${pathname === item.link ? "active" : ""} custom-nav text-base`}>{item.title}</p>
+                            </Link>
+                        ))}
+                    </section>
+
                 </section>
 
-                <section className='ml-[-12rem]'>
-                    <Link href="/">
-                        <h2 className="text-3xl font-extrabold">COR-BINS</h2>
-                    </Link>
+                <section className='flex flex-col items-center justify-center gap-6'>
+                    <div className='flex gap-3 items-center'>
+                        <AiFillInstagram size={22}/>
+                        <Divider className='h-4 bg-gray-400' orientation='vertical'/>
+                        <FaFacebook size={20}/>
+                        <Divider className='h-4 bg-gray-400' orientation='vertical'/>
+                        <IoMdMail size={22}/>
+                        <Divider className='h-4 bg-gray-400' orientation='vertical'/>
+                        <FaTwitter size={20}/>
+                    </div>
+
+                    <section>
+                        <Link href="https://www.opentable.com.au/restref/client/?lang=en-AU&ot_source=Restaurant%20website&restref=162221&corrid=4f9ca6c2-719c-46cb-a632-f752d93d8795" target='_blank'>
+                            <button className='rounded-sm py-2 px-6 border border-white hover:bg-white hover:text-black transition-all duration-500 custom-button'>
+                                Book Now
+                            </button>
+                        </Link>
+                    </section>
                 </section>
 
-                <section>
-                    <Link href="https://www.opentable.com.au/restref/client/?lang=en-AU&ot_source=Restaurant%20website&restref=162221&corrid=4f9ca6c2-719c-46cb-a632-f752d93d8795" target='_blank'>
-                        <button className='rounded-sm py-2 px-8 border border-white hover:bg-white hover:text-black transition-all duration-500'>
-                            Book Now
-                        </button>
-                    </Link>
-                </section>
             </main>
+            <Divider className='bg-gray-600'/>
         </>
     );
 };
+
+
 
 export default Nav;

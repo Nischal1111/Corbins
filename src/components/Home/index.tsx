@@ -5,7 +5,7 @@ import MainSection from './MainSection'
 
 const Home = () => {
   return (
-    <div className='bg-[#0d0d0d] text-white px-12'>
+    <div className='bg-[#0d0d0d] text-white px-16'>
         <HeroSection/>
         <MainSection/>
     </div>
