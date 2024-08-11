@@ -2,7 +2,7 @@ import { mainFont } from '@/app/layout'
 import Link from 'next/link'
 import React from 'react'
 import { AiFillInstagram } from 'react-icons/ai'
-import { FaFacebook } from 'react-icons/fa'
+import { FaFacebook, FaTripadvisor } from 'react-icons/fa'
 import { IoMdMail } from 'react-icons/io'
 import { IoCall } from 'react-icons/io5'
 
@@ -59,21 +59,21 @@ const MainSection = () => {
                                 <div className='flex gap-2 items-center relative'>
                                 <AiFillInstagram size={25}/>
                                 <div className='w-4 h-[1px] bg-gray-400'></div>
-                                <h2 className='text-sm font-extralight tracking-widest custom-link'>instagram.com/corbins_</h2>
+                                <h2 className='text-sm font-extralight tracking-widest hover:underline'>instagram.com/corbins_</h2>
                                 </div>
                             </Link>
-                            <Link href="https://www.instagram.com/corbins_?igsh=YzVpZzBuM2w2a3do" target='_blank'>
+                            <Link href="https://www.facebook.com/corbinskitchenandwinebar/" target='_blank'>
                                 <div className='flex gap-2 items-center relative'>
                                 <FaFacebook size={25}/>
                                 <div className='w-4 h-[1px] bg-gray-400'></div>
-                                <h2 className='text-sm font-extralight tracking-widest custom-link'>facebook.com/corbins_</h2>
+                                <h2 className='text-sm font-extralight tracking-widest hover:underline'>facebook.com/corbins_</h2>
                                 </div>
                             </Link>
-                            <Link href="https://www.instagram.com/corbins_?igsh=YzVpZzBuM2w2a3do" target='_blank'>
+                            <Link href="https://www.tripadvisor.com.au/Restaurant_Review-g499672-d7394406-Reviews-Corbin_s-Maroochydore_Sunshine_Coast_Queensland.html" target='_blank'>
                                 <div className='flex gap-2 items-center relative'>
-                                <AiFillInstagram size={25}/>
+                                <FaTripadvisor size={25}/>
                                 <div className='w-4 h-[1px] bg-gray-400'></div>
-                                <h2 className='text-sm font-extralight tracking-widest custom-link'>tripadvisor.com/corbins_</h2>
+                                <h2 className='text-sm font-extralight tracking-widest hover:underline'>tripadvisor.com/corbins_</h2>
                                 </div>
                             </Link>
                         </div>

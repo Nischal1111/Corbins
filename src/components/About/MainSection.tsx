@@ -2,8 +2,10 @@ import { mainFont, subFont } from '@/app/layout'
 import React from 'react'
 import Image from 'next/image'
 import { AiFillInstagram } from 'react-icons/ai'
-import { FaFacebook, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaTripadvisor } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io'
+import Link from 'next/link';
+import { Divider } from '@nextui-org/react';
 
 const MainSection = () => {
   return (
@@ -66,10 +68,17 @@ const MainSection = () => {
           <div className='flex gap-4 items-center mt-20'>
             <p className='text-xl tracking-wider'>#Corbins</p>
               <div className='flex gap-5 items-center'>
-              <AiFillInstagram size={22}/>
-              <FaFacebook size={22}/>
-              <IoMdMail size={22}/>
-              <FaTwitter size={22}/>
+                <Link href="https://www.instagram.com/corbins_?igsh=YzVpZzBuM2w2a3do" target='_blank'>
+                            <AiFillInstagram size={26}/>
+                        </Link>
+                        <Divider className='h-4 bg-gray-400' orientation='vertical'/>
+                        <Link href="https://www.facebook.com/corbinskitchenandwinebar/" target='_blank'>
+                            <FaFacebook size={22}/>
+                        </Link>
+                        <Divider className='h-4 bg-gray-400' orientation='vertical'/>
+                        <Link href="https://www.tripadvisor.com.au/Restaurant_Review-g499672-d7394406-Reviews-Corbin_s-Maroochydore_Sunshine_Coast_Queensland.html" target='_blank'>
+                            <FaTripadvisor size={22}/>
+                        </Link>
             </div>
           </div>
         </div>

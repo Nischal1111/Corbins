@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { mainFont } from '@/app/layout'
+import Link from 'next/link'
 
 
 const MainSection = () => {
@@ -69,12 +70,16 @@ const MainSection = () => {
                     <p className='text-base font-extralight text-center'>34 Duporth Avenue,<br />
                     Maroochydore, Queensland</p>
                     <div className='flex gap-3'>
-                        <button className='text-sm font-extralight bg-[rgba(255,255,255,.8)] tracking-widest px-7 py-3 text-black'>
-                            View map
-                        </button>
-                        <button className='text-sm font-extralight bg-black tracking-widest border border-white px-7 py-3 text-white'>
-                            Book a table
-                        </button>
+                        <Link href={"https://www.google.com/maps/place/Corbin's+Kitchen+%26+Wine+Bar/@-26.65224,153.092499,20.13z/data=!4m10!1m2!2m1!1scorbins+au+map!3m6!1s0x6b93766272785be7:0x66e804ac836faa70!8m2!3d-26.6521784!4d153.092886!15sCg5jb3JiaW5zIGF1IG1hcFoJIgdjb3JiaW5zkgEKcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOUGJuWlFVa3BuRUFF4AEA!16s%2Fg%2F11b8tbyzpj?entry=ttu"} target='_blank'>
+                            <button className='text-sm font-extralight bg-[rgba(255,255,255,.8)] tracking-widest px-7 py-3 text-black'>
+                                View map
+                            </button>
+                        </Link>
+                        <Link href="https://www.opentable.com.au/restref/client/?lang=en-AU&ot_source=Restaurant%20website&restref=162221&corrid=4f9ca6c2-719c-46cb-a632-f752d93d8795" target='_blank'>
+                            <button className='text-sm font-extralight bg-black tracking-widest border border-white px-7 py-3 text-white'>
+                                Book a table
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

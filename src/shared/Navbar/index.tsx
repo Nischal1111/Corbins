@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { mainFont, subFont } from '@/app/layout';
 import { usePathname } from 'next/navigation';
-import { FaInstagram, FaFacebookF, FaTwitter, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaTwitter, FaFacebook, FaTripadvisor } from 'react-icons/fa';
 import { IoCall } from 'react-icons/io5';
 import { IoMdMail } from 'react-icons/io';
 import { AiFillInstagram } from 'react-icons/ai';
@@ -33,10 +33,12 @@ const Nav = () => {
                         <IoCall size={15}/>
                         <p className='text-sm'>(07) 5326 1022</p>
                     </div>
-                    <div className='flex gap-3 items-center justify-self-start'>
-                        <IoMdMail size={15}/>
-                        <p className='text-sm'>info@corbins.com.au</p>
-                    </div>
+                    <Link href={'mailto:info@corbins.com.au'}>
+                        <div className='flex gap-3 items-center justify-self-start'>
+                            <IoMdMail size={15}/>
+                            <p className='text-sm'>info@corbins.com.au</p>
+                        </div>
+                    </Link>
                 </section>
 
                 <section className='flex flex-col items-center justify-center gap-3'>
@@ -58,13 +60,17 @@ const Nav = () => {
 
                 <section className='flex flex-col items-center justify-center gap-6'>
                     <div className='flex gap-3 items-center'>
-                        <AiFillInstagram size={22}/>
+                        <Link href="https://www.instagram.com/corbins_?igsh=YzVpZzBuM2w2a3do" target='_blank'>
+                            <AiFillInstagram size={22}/>
+                        </Link>
                         <Divider className='h-4 bg-gray-400' orientation='vertical'/>
-                        <FaFacebook size={20}/>
+                        <Link href="https://www.facebook.com/corbinskitchenandwinebar/" target='_blank'>
+                            <FaFacebook size={20}/>
+                        </Link>
                         <Divider className='h-4 bg-gray-400' orientation='vertical'/>
-                        <IoMdMail size={22}/>
-                        <Divider className='h-4 bg-gray-400' orientation='vertical'/>
-                        <FaTwitter size={20}/>
+                        <Link href="https://www.tripadvisor.com.au/Restaurant_Review-g499672-d7394406-Reviews-Corbin_s-Maroochydore_Sunshine_Coast_Queensland.html" target='_blank'>
+                            <FaTripadvisor size={20}/>
+                        </Link>
                     </div>
 
                     <section>
