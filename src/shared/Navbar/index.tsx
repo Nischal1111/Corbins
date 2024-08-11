@@ -19,7 +19,7 @@ const Nav = () => {
     const navItems = [
         { title: "Home", link: "/" },
         { title: "About", link: "/about" },
-        { title: "Contact", link: "/contact" },
+        { title: "Contact", link: "/contacts" },
         { title: "Gallery", link: "/gallery" },
         { title: "Menus", link: "/menus" }
     ];

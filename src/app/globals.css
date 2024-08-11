@@ -20,6 +20,20 @@
     top: 1.6rem;
     transition: all 0.5s ease;
 }
+.custom-link {
+    position: relative;
+}
+
+.custom-link:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0;
+    height: 1px;
+    left: -1px;
+    top:2.8rem;
+    transition: all 0.5s ease;
+}
 
 .custom-button {
     outline-offset: -3px;
@@ -34,6 +48,10 @@
 .custom-nav.active:after {
     width: 100%;
 }
+.custom-link:hover:after,
+.custom-link.active:after {
+    width: 85%;
+}
 
 .custom-menu-bg{
     background-image: url("/assets/menus/section2.avif");
@@ -45,6 +63,13 @@
 
 .custom-about-bg{
     background-image: url("/assets/aboutcorbins.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+}
+.custom-contact-bg{
+    background-image: url("/assets/contact.avif");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

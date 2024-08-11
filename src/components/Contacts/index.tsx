@@ -1,9 +1,14 @@
 import React from 'react'
+import HeroSection from '../Contacts/HeroSection';
+import MainSection from './MainSection';
+import ContactForm from './ContactForm';
 
 const Contacts = () => {
   return (
     <div className='text-white px-16'>
-      
+      <HeroSection/>
+      <MainSection/>
+      <ContactForm/>
     </div>
   )
 }
