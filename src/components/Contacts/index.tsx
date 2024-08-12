@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from '../Contacts/HeroSection';
 import MainSection from './MainSection';
-import ContactForm from './ContactForm';
+import ContactForm from './ContactForm.jsx';
 
 const Contacts = () => {
   return (

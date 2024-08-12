@@ -105,6 +105,13 @@
         background-size: contain;
         background-attachment: fixed;
 }
+.custom-contacts{
+    background-image: url("/assets/contact-form.avif");
+        background-repeat: no-repeat;
+        background-position:left;
+        background-size: contain;
+        background-attachment: fixed;
+}
 
 .custom-coffee {
     position: relative;
