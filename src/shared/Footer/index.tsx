@@ -5,6 +5,7 @@ import { mainFont, subFont } from '@/app/layout';
 import { IoMdMail } from 'react-icons/io';
 import {AiFillInstagram} from 'react-icons/ai';
 import { FaFacebook, FaTripadvisor, FaTwitter } from 'react-icons/fa';
+import { BsDash } from 'react-icons/bs';
 
 const index = () => {
   return (
@@ -32,7 +33,7 @@ const index = () => {
         <section className='mt-16 lg:mt-0 lg:flex-[.6] flex-1 flex flex-col lg:items-center items-start h-auto gap-4'>
 
           <div className='h-auto lg:flex lg:flex-row flex-col items-center gap-6 justify-center'>
-            <h2 className={`text-3xl font-extrabold ${subFont.className}`}>COR-BINS</h2>
+            <h2 className={`text-3xl flex items-center font-extrabold ${subFont.className}`}>CORB<BsDash/>NS</h2>
             <Divider orientation='vertical' className='bg-zinc-300 h-[2.2rem] w-[.5px] lg:flex hidden'/>
             <div className='flex lg:mt-0 mt-3 gap-5 items-center'>
               <AiFillInstagram size={25}/>
@@ -59,7 +60,7 @@ const index = () => {
         <section className="mt-16 mb-4  lg:mb-0 lg:mt-0 flex-[.3] flex flex-col lg:items-center items-start gap-4">
             <h1 className='text-2xl font-medium '>Open Hours</h1>
             <Divider className='bg-gray-500 my-2 w-3/5'/>
-            <div className='w-full flex flex-col gap-7'>
+            <div className='w-full flex flex-col lg:items-center items-start gap-7'>
               <div className='flex gap-3 lg:items-center items-start'>
                 <p className='text-sm'>Tuesday to Thursday 12PM-Late</p>
               </div>

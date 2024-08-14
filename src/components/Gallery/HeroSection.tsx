@@ -7,9 +7,10 @@ import Link from 'next/link';
 const HeroSection = () => {
   return (
     <div className={`${subFont.className} w-full flex items-center justify-center flex-col`}>
-        <div className='mt-5 lg:flex hidden items-center gap-5'>
+        <div className='mt-5 flex items-center gap-5'>
+            <div className='lg:w-20 lg:hidden flex w-8 h-[1px] bg-gray-400'></div>
             <h1 className='lg:text-2xl text-xl'>Gallery</h1>
-            <div className='w-20 h-[1px] bg-gray-400'></div>
+            <div className='lg:w-20 w-8 h-[1px] bg-gray-400'></div>
         </div>
 
         <div className='flex flex-col gap-3 items-center lg:mt-8 mt-4'>

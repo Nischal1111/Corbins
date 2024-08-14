@@ -13,10 +13,10 @@ const HeroSection = () => {
                 <div className='w-20 h-[1px] bg-gray-400'></div>
             </div>
         </div>
-        <div className='h-[90vh] w-full rounded-lg mt-8 custom-menu-bg relative'>
-            <div className={`absolute right-[5%] ${mainFont.className} w-2/5 top-1/4`}>
-                <h1 className='text-4xl font-semibold tracking-widest'>Our Menu: Culinary Delights Await.</h1>
-                <p className='text-lg font-extralight leading-7 tracking-wide mt-6 text-justify'>Explore a curated selection of exquisite dishes, each crafted to tantalize your taste buds. Discover your next favorite meal with our diverse and delicious menu offerings.</p>
+        <div className='lg:h-[90vh] h-[60vh] w-full rounded-lg mt-8 custom-menu-bg relative'>
+            <div className={`absolute lg:right-[5%] right-0 ${mainFont.className} lg:w-2/5 w-full lg:top-1/4 top-12`}>
+                <h1 className='lg:text-4xl text-2xl font-semibold tracking-widest'>Our Menu: Culinary Delights Await.</h1>
+                <p className='lg:text-lg text-sm font-extralight lg:leading-7 leading-5 tracking-wide lg:mt-6 mt-3 text-justify'>Explore a curated selection of exquisite dishes, each crafted to tantalize your taste buds. Discover your next favorite meal with our diverse and delicious menu offerings.</p>
                 <button className='bg-gray-300 text-black rounded-sm py-3 px-6 mt-8 tracking-widest text-sm hover:bg-gray-400 hover:text-white duration-500'>See menu below</button>
             </div>
         </div>
