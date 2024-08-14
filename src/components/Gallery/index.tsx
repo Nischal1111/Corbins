@@ -4,7 +4,7 @@ import ImageGrid from "./ImageGrid"
 
 const Gallery = () => {
   return (
-    <main className='text-white px-20'>
+    <main className='text-white lg:px-20 px-1'>
         <HeroSection/>
         <ImageGrid/>
     </main>

@@ -42,7 +42,7 @@ const handleChange = (e) => {
                   <span className='text-xl tracking-wider'>Leave a message</span>
                   <textarea type="text" className='w-full focus:outline-none bg-transparent border-b border-b-zinc-200 text-base px-4'  required value={form.message} onChange={handleChange} placeholder='Send me a message .' name='message' autoComplete='off'style={{minHeight:"20vh"}}/>
                   </label>
-                  <button className='custom-button bg-transparent border border-white text-white rounded-sm py-2 px-6 -mt-4 relative tracking-widest text-base hover:bg-white hover:text-black duration-500' type='submit'>{loading ? "Sending..." :"Send"} </button>
+                  <button className='w-fit custom-button bg-transparent border border-white text-white rounded-sm py-2 px-6 -mt-4 relative tracking-widest text-base hover:bg-white hover:text-black duration-500' type='submit'>{loading ? "Sending..." :"Send"} </button>
               </form>
 
       </section>

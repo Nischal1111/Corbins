@@ -26,6 +26,7 @@ const metadata: Metadata = {
   description: "Corbins",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
