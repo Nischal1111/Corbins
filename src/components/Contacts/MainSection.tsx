@@ -8,16 +8,16 @@ import { IoCall } from 'react-icons/io5'
 
 const MainSection = () => {
   return (
-    <main className='mt-12 relative flex flex-col items-center justify-center mb-12'>
-                        <section className={`absolute top-[-40%]  ${mainFont.className}`}>
-            <div className='w-[80vw] bg-[rgba(255,255,255,.9)] rounded-sm px-8 py-6 text-black flex flex-col gap-8'>
-                <section className='flex px-16 items-start justify-between'>
+    <main className='mt-12 relative flex flex-col lg:gap-0 gap-12 items-center justify-center mb-12'>
+                        <section className={`lg:absolute relative lg:top-[-35%] mt-4  ${mainFont.className}`}>
+            <div className='lg:w-[80vw] w-[95vw] bg-[rgba(255,255,255,.9)] rounded-sm px-8 py-6 text-black flex flex-col lg:gap-8 gap-6'>
+                <section className='flex lg:flex-row flex-col lg:px-16 px-2 items-start justify-between gap-6'>
                     <div>
                         <div className='mt-5 flex items-center gap-5'>
-                            <h1 className='text-2xl'>Address</h1>
+                            <h1 className='lg:text-2xl text-xl'>Address</h1>
                             <div className='w-20 h-[1px] bg-gray-400'></div>
                         </div>
-                        <p className='text-lg mt-3'>
+                        <p className='lg:text-lg text-sm mt-3'>
                             34 Duporth Avenue,
                             Maroochydore, Queensland
                         </p>
@@ -26,32 +26,32 @@ const MainSection = () => {
                     <div className='flex flex-col gap-2'>
                         <article>
                             <div className='mt-5 flex items-center gap-5'>
-                                <h1 className='text-2xl'>Telephone</h1>
+                                <h1 className='lg:text-2xl text-xl'>Telephone</h1>
                                 <div className='w-20 h-[1px] bg-gray-400'></div>
                             </div>
                             <div className='flex gap-3 items-center justify-self-start mt-2'>
                                 <IoCall size={15}/>
-                                <p className='text-sm'>(07) 5326 1022</p>
+                                <p className='lg:text-lg text-sm'>(07) 5326 1022</p>
                             </div>
                         </article>
 
                         <article>
                             <div className='mt-5 flex items-center gap-5'>
-                                <h1 className='text-2xl'>E-mail</h1>
+                                <h1 className='lg:text-2xl text-xl'>E-mail</h1>
                                 <div className='w-20 h-[1px] bg-gray-400'></div>
                             </div>
                             <div className='flex gap-3 items-center justify-self-start mt-2'>
                                 <IoMdMail size={15}/>
-                                <p className='text-sm'>info@corbins.com.au</p>
+                                <p className='lg:text-lg text-sm'>info@corbins.com.au</p>
                             </div>
                         </article>
                     </div>
                 </section>
 
-                <section className='flex px-16 items-start justify-between'>
+                <section className='flex lg:flex-row flex-col lg:px-16 px-2 items-start justify-between gap-6'>
                     <div>
                         <div className='mt-5 flex items-center gap-5'>
-                            <h1 className='text-2xl'>Follow Us</h1>
+                            <h1 className='lg:text-2xl text-xl'>Follow Us</h1>
                             <div className='w-20 h-[1px] bg-gray-400'></div>
                         </div>
                         <div className='flex flex-col gap-5 items-start mt-3'>
@@ -82,7 +82,7 @@ const MainSection = () => {
                     <div className='flex flex-col gap-2'>
                         <article>
                             <div className='mt-5 flex items-center gap-5'>
-                                <h1 className='text-2xl'>Open Hours</h1>
+                                <h1 className='lg:text-2xl text-xl'>Open Hours</h1>
                                 <div className='w-20 h-[1px] bg-gray-400'></div>
                             </div>
                             <div className='w-full flex flex-col gap-5 mt-3'>
@@ -101,7 +101,7 @@ const MainSection = () => {
                 </section>
             </div>
             </section> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564.1925391523305!2d153.09267507239238!3d-26.65226108527355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93766272785be7%3A0x66e804ac836faa70!2sCorbin&#39;s%20Kitchen%20%26%20Wine%20Bar!5e0!3m2!1sen!2snp!4v1723307265610!5m2!1sen!2snp" className='w-[100vw] mt-[12rem] h-[90vh] -px-16' style={{border:0}} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564.1925391523305!2d153.09267507239238!3d-26.65226108527355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93766272785be7%3A0x66e804ac836faa70!2sCorbin&#39;s%20Kitchen%20%26%20Wine%20Bar!5e0!3m2!1sen!2snp!4v1723307265610!5m2!1sen!2snp" className='w-[100vw] lg:mt-[12rem] mt lg:h-[90vh] h-[70vh] lg:-px-16 px-0' style={{border:0}} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </main>
   )
 }

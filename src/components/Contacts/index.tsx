@@ -5,7 +5,7 @@ import ContactForm from './ContactForm.jsx';
 
 const Contacts = () => {
   return (
-    <div className='text-white px-16'>
+    <div className='text-white lg:px-16 px-1'>
       <HeroSection/>
       <MainSection/>
       <ContactForm/>

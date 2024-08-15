@@ -4,13 +4,13 @@ import { mainFont } from '@/app/layout'
 
 const MainSection = () => {
   return (
-    <main className={`my-4 lg:mt-[7rem] mb-20 justify-center flex flex-col items-center lg:gap-0 gap-20 pb-8 ${mainFont.className}`}>
+    <main className={`my-4 lg:mt-[7rem] justify-center flex flex-col items-center lg:gap-0 gap-20 pb-8 pt-12 ${mainFont.className}`}>
 
-        <section className='flex w-[90%] lg:flex-row flex-col relative mt-8 h-[50vh] items-center'>
+        <section className='flex w-[90%] lg:flex-row flex-col relative lg:h-[50vh] h-auto items-center'>
             <main className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/food-menu.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
             </main>
-            <main className=' relative lg:w-[50%] w-full lg:top-0 top-[-20%]  lg:-left-[12%] left-0 '>
+            <main className=' relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-left-[12%] left-0 '>
                 <div className='bg-[rgba(0,0,0,.7)] p-4 border-t border-r border-gray-400'>
                     <div className='mt-3 flex items-center gap-5'>
                         <h1 className='lg:text-xl text-lg text-white pl-4'>Food Menu</h1>
@@ -25,11 +25,11 @@ const MainSection = () => {
             </main>
         </section>
 
-        <section className='flex w-[90%] relative lg:mt-[10rem] mt-[4rem] mb-[4rem] h-[50vh] items-center lg:flex-row-reverse flex-col'>
+        <section className='flex w-[90%] relative lg:mt-[10rem] lg:h-[50vh] h-auto items-center lg:flex-row-reverse flex-col'>
             <main className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/drink-menu.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
             </main>
-            <main className=' relative lg:w-[50%] w-full lg:top-0 top-[-20%]  lg:-right-[12%] right-0 '>
+            <main className=' relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-right-[12%] right-0 '>
                 <div className='bg-[rgba(0,0,0,.7)] p-4 border-b border-l border-gray-400'>
                     <div className='mt-3 flex items-center gap-5'>
                         <h1 className='lg:text-xl text-lg text-white pl-4'>Drink Menu</h1>
@@ -44,11 +44,11 @@ const MainSection = () => {
             </main>
         </section>
 
-        <section className='flex w-[90%] lg:flex-row flex-col relative lg:mt-[6rem] my-12 h-[50vh] items-center '>
+        <section className='flex w-[90%] lg:flex-row flex-col relative lg:mt-[6rem] lg:h-[50vh] h-auto items-center '>
             <main className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/degustation-foods.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
             </main>
-            <main className='relative lg:w-[50%] w-full lg:top-0 top-[-20%]  lg:-left-[12%] left-0 '>
+            <main className='relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-left-[12%] left-0 '>
                 <div className='bg-[rgba(0,0,0,.7)] p-4 border-y border-gray-400'>
                     <div className='mt-3 flex items-center gap-5'>
                         <h1 className='lg:text-xl text-lg text-white pl-4'>Degustation Menu</h1>

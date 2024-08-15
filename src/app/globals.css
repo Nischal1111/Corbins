@@ -9,6 +9,12 @@
 .custom-nav {
     position: relative;
 }
+@media only screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        /* Other mobile-specific styles */
+    }
+}
 
 .custom-nav:after {
     content: "";
@@ -53,11 +59,11 @@
     width: 85%;
 }
 
-.custom-menu-bg{
+.custom-menu-bg {
     background-image: url("/assets/menus/section2.avif");
     background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
+    background-position: center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -135,21 +141,14 @@
     z-index: -1;
 }
 
-.reserve-home {
-    animation: updown 10s linear infinite;
-}
-
-
-@keyframes updown {
-    0% {
-        transform: translateY(-10px);
+@media (max-width: 500px) {
+    .custom-menu-bg,.custom-about-bg,.custom-home-bg,.custom-contact-bg,.custom-home-scroll1,.custom-home-scroll2,.custom-findUs,.custom-coffee {
+        background-attachment: scroll;
+        background-position: center top;
     }
-
-    50% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(-10px);
+    .custom-contacts{
+        background-position: center top;
+        background-size: cover;
+        background-attachment: scroll;
     }
 }
