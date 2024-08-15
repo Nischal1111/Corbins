@@ -23,13 +23,13 @@ const handleChange = (e) => {
                 <div className='custom-contacts lg:h-screen h-[50vh] lg:w-[45vw] w-full'>
                 </div>
       </div>
-      <section className='relative flex flex-col items-center gap-12 lg:w-1/2 w-full'>
+      <section id='contact-form' className='relative flex flex-col items-center gap-12 lg:w-1/2 w-full'>
         <h1 className='text-2xl lg:hidden flex  font-medium mt-3'>Contact Us</h1>
         <div className='text-center lg:flex lg:flex-col hidden '>
           <h1 className='text-gray-400 text-2xl '>Get in touch</h1>
           <h1 className='text-5xl font-medium mt-3'>Contact Us</h1>
         </div>
-        <form className='flex flex-col gap-16 w-full lg:px-16 px-10 lg:p-0 p-4'>
+        <form  className='flex flex-col gap-16 w-full lg:px-16 px-10 lg:p-0 p-4'>
                   <label htmlFor="" className='flex flex-col gap-6'>
                   <span className='text-xl tracking-wider'>Your name</span>
                   <input type="text" className='w-full focus:outline-none bg-transparent pb-2 border-b border-b-zinc-200 text-base px-4 rounded-none' required value={form.name} onChange={handleChange} placeholder='Enter Your Name...' name='name' autoComplete='off'/>

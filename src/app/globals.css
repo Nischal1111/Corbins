@@ -151,4 +151,9 @@
         background-size: cover;
         background-attachment: scroll;
     }
+    .custom-coffee{
+        width: 95%;
+    }
+
+
 }
