@@ -7,7 +7,7 @@ import { NextUIProvider } from "@nextui-org/system";
 import ScrollToTop from "@/shared/ScrollToTop";
 
 
-export const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const subFont = Life_Savers({ 
     weight: "400",

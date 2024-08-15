@@ -4,9 +4,9 @@ import { mainFont } from '@/app/layout'
 
 const MainSection = () => {
   return (
-    <main className={`my-4 mb-20 justify-center flex flex-col items-center ${mainFont.className}`}>
+    <main className={`my-4 lg:mt-[7rem] mb-20 justify-center flex flex-col items-center lg:gap-0 gap-20 pb-8 ${mainFont.className}`}>
 
-        <section className='flex w-[90%] lg:flex-row flex-col relative mt-[6rem] mb-[4rem] h-[50vh] items-center'>
+        <section className='flex w-[90%] lg:flex-row flex-col relative mt-8 h-[50vh] items-center'>
             <main className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/food-menu.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
             </main>
@@ -25,7 +25,7 @@ const MainSection = () => {
             </main>
         </section>
 
-        <section className='flex w-[90%] relative mt-[5rem] mb-[4rem] h-[50vh] items-center lg:flex-row-reverse flex-col'>
+        <section className='flex w-[90%] relative lg:mt-[10rem] mt-[4rem] mb-[4rem] h-[50vh] items-center lg:flex-row-reverse flex-col'>
             <main className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/drink-menu.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
             </main>
@@ -44,7 +44,7 @@ const MainSection = () => {
             </main>
         </section>
 
-        <section className='flex w-[90%] lg:flex-row flex-col relative mt-[6rem] mb-[4rem] h-[50vh] items-center '>
+        <section className='flex w-[90%] lg:flex-row flex-col relative lg:mt-[6rem] my-12 h-[50vh] items-center '>
             <main className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/degustation-foods.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
             </main>

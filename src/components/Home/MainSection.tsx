@@ -16,17 +16,17 @@ const MainSection = () => {
             <section className='flex w-2/5 flex-col flex-[.4] px-6 py-6'>
 
                 <div className='mt-5 flex items-center gap-5'>
-                    <h1 className='text-3xl text-white font-bold'>Corbin's: Where Every Bite Tells a Story</h1>
+                    <h1 className='text-3xl text-white font-bold'>Corbin&apos;s: Where Every Bite Tells a Story</h1>
                     <div className='w-40 h-[1px] bg-white'></div>
                 </div>
 
                 <p className='text-base leading-7 tracking-wide mt-4 text-justify'>
-                    Welcome to Corbin's, where exceptional dining meets warm hospitality. Our menu features a harmonious blend of classic and contemporary flavors, crafted 
-                    with the finest ingredients to ensure every meal is a memorable experience. At Corbin's, we believe in creating more than just delicious food—we 
+                    Welcome to Corbin&apos;s, where exceptional dining meets warm hospitality. Our menu features a harmonious blend of classic and contemporary flavors, crafted 
+                    with the finest ingredients to ensure every meal is a memorable experience. At Corbin&apos;s, we believe in creating more than just delicious food—we 
                     offer a space where you can savor every moment and connect with friends and family. Discover a dining experience that feels both special and inviting, 
-                    where every visit is a celebration of good taste and great company. t Corbin's, we strive to create an ambiance where every meal feels like a special 
-                    occasion, making each visit a memorable experience. Whether you're here for a casual meal or a special celebration, we invite you to savor the warmth and 
-                    flavors that define Corbin's.
+                    where every visit is a celebration of good taste and great company. t Corbin&apos;s, we strive to create an ambiance where every meal feels like a special 
+                    occasion, making each visit a memorable experience. Whether you&apos;re here for a casual meal or a special celebration, we invite you to savor the warmth and 
+                    flavors that define Corbin&apos;s.
                 </p>
 
 
@@ -38,12 +38,12 @@ const MainSection = () => {
             <div className='flex w-[80%] items-center justify-center gap-8 absolute black rounded-lg shadow-2xl h-auto z-[100] bg-[rgba(0,0,0,.9)] p-16 top-[60%] custom-coffee'>
                 <div className=''>
                     <div className='mt-5 flex items-center gap-5'>
-                        <h1 className='text-3xl text-white font-bold'>Corbin's: Where Every Bite Tells a Story</h1>
+                        <h1 className='text-3xl text-white font-bold'>Corbin&apos;s: Where Every Bite Tells a Story</h1>
                         <div className='w-40 h-[1px] bg-white'></div>
                     </div>
                     <p className='text-justify mt-8'>
-                        Welcome to Corbin's, where exceptional dining meets warm hospitality. Our menu features a harmonious blend of classic and contemporary flavors, crafted 
-                        with the finest ingredients to ensure every meal is a memorable experience. At Corbin's, we believe in creating more than just delicious food.
+                        Welcome to Corbin&apos;s, where exceptional dining meets warm hospitality. Our menu features a harmonious blend of classic and contemporary flavors, crafted 
+                        with the finest ingredients to ensure every meal is a memorable experience. At Corbin&apos;s, we believe in creating more than just delicious food.
                     </p>
                     <button className='bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative tracking-widest text-base hover:bg-white hover:text-black duration-500'>Explore Menu</button>
                 </div>
@@ -70,7 +70,7 @@ const MainSection = () => {
                     <p className='text-base font-extralight text-center'>34 Duporth Avenue,<br />
                     Maroochydore, Queensland</p>
                     <div className='flex gap-3'>
-                        <Link href={"https://www.google.com/maps/place/Corbin's+Kitchen+%26+Wine+Bar/@-26.65224,153.092499,20.13z/data=!4m10!1m2!2m1!1scorbins+au+map!3m6!1s0x6b93766272785be7:0x66e804ac836faa70!8m2!3d-26.6521784!4d153.092886!15sCg5jb3JiaW5zIGF1IG1hcFoJIgdjb3JiaW5zkgEKcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOUGJuWlFVa3BuRUFF4AEA!16s%2Fg%2F11b8tbyzpj?entry=ttu"} target='_blank'>
+                        <Link href={"https://www.google.com/maps/place/Corbin&apos;s+Kitchen+%26+Wine+Bar/@-26.65224,153.092499,20.13z/data=!4m10!1m2!2m1!1scorbins+au+map!3m6!1s0x6b93766272785be7:0x66e804ac836faa70!8m2!3d-26.6521784!4d153.092886!15sCg5jb3JiaW5zIGF1IG1hcFoJIgdjb3JiaW5zkgEKcmVzdGF1cmFudJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOUGJuWlFVa3BuRUFF4AEA!16s%2Fg%2F11b8tbyzpj?entry=ttu"} target='_blank'>
                             <button className='text-sm font-extralight bg-[rgba(255,255,255,.8)] tracking-widest px-7 py-3 text-black'>
                                 View map
                             </button>

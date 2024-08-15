@@ -1,5 +1,5 @@
 import React from 'react'
-import { mainFont, subFont,inter } from '@/app/layout'
+import { mainFont, subFont} from '@/app/layout'
 
 import Image from 'next/image'
 
