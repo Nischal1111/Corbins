@@ -9,8 +9,8 @@ import { Divider } from '@nextui-org/react';
 
 const MainSection = () => {
   return (
-    <article className={`flex w-full px-12 gap-24 ${mainFont.className} relative -mb-32`}>
-      <main className='relative flex flex-col flex-start w-[50%]'>
+    <article className={`flex lg:flex-row flex-col w-full lg:px-12 px-4 lg:gap-24 gap-4 ${mainFont.className} relative lg:-mb-32 mb-2`}>
+      <main className='relative flex flex-col flex-start  lg:w-[50%] w-full'>
         
         <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full h-80% mt-[40%] object-cover'/>
 
@@ -19,7 +19,7 @@ const MainSection = () => {
             <h1 className='text-3xl text-white'>Our Team</h1>
             <div className='w-20 h-[1px] bg-white'></div>
           </div>
-          <p className='text-sm leading-6 tracking-wider mt-6 text-justify text-gray-300 w-[90%]'>
+          <p className='text-sm leading-6 tracking-wider mt-6 text-justify text-gray-300 lg:w-[90%] w-full'>
             At Corbin&apos;s, our team is dedicated to delivering exceptional dining experiences. Our talented chefs craft each dish with creativity and precision, using the freshest 
             ingredients. Our friendly front-of-house staff ensures every guest feels welcomed and valued. Together, we are committed to excellence and creating 
             memorable moments for our customers. Join us and experience the passion and dedication that define our team at Corbin&apos;s.
@@ -32,7 +32,7 @@ const MainSection = () => {
 
       {/* Right section  */}
 
-      <main className='w-[50%] flex flex-col relative'>
+      <main className='lg:w-[50%] w-full flex flex-col relative'>
 
         <Image src="/assets/chef.avif" alt='chef' height={1000} width={1000} className='w-full h-[25%] mt-16 object-cover'/>
 

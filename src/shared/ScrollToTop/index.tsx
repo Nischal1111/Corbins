@@ -9,10 +9,10 @@ const ScrollToTop = () => {
 
     return (
         <button
-            className="shadow-2xl h-10 w-10 flex items-center p-1 border border-white justify-center rounded-full fixed bottom-12 right-12 bg-gray-800 z-[999] cursor-pointer"
+            className="shadow-2xl size-[3.5rem] flex items-center p-1 border border-white justify-center rounded-full fixed lg:bottom-12 bottom-16 lg:right-12 right-8 bg-gray-800 z-[999] cursor-pointer"
             onClick={handleTop}
         >
-            <AiOutlineArrowUp size={20} className="text-white"/>
+            <AiOutlineArrowUp size={25} className="text-white"/>
         </button>
     );
 };
