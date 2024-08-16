@@ -117,12 +117,12 @@ const Nav = () => {
             {/* New Sidebar */}
             <div 
                 ref={sideRef}
-                className={`fixed inset-y-0 h-[80vh] right-0 z-[9999999] flex w-3/5 border-l border-b max-w-xs bg-black transition-transform duration-300 ease-in-out ${
+                className={`fixed inset-y-0 right-0 z-[9999999] flex w-1/2 border-l border-b max-w-xs bg-zinc-100 transition-transform duration-300 ease-in-out ${
                     isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
                 }`}
             >
                 {/* Sidebar content */}
-                <div className={`z-10 flex flex-col flex-1 text-zinc-300 ${subFont.className} p-4 w-full`}>
+                <div className={`z-10 flex flex-col flex-1 text-gray-800 ${subFont.className} p-4 w-full`}>
                     {/* Close button */}
                     <button onClick={toggleSidebar} className="self-end p-2 rounded-lg focus:outline-none focus:ring">
                         <svg
@@ -140,7 +140,7 @@ const Nav = () => {
                     <nav className="flex flex-col flex-1 mt-8">
                         {navItems.map((item) => (
                             <Link href={item.link} key={item.title} onClick={() => handleNavigation(item.link)}>
-                                <p className={`py-2 ${pathname === item.link ? "text-white font-bold" : ""}`}>{item.title}</p>
+                                <p className={`py-2 ${pathname === item.link ? "text-black font-bold" : ""}`}>{item.title}</p>
                             </Link>
                         ))}
                     </nav>
@@ -148,12 +148,12 @@ const Nav = () => {
                     <section className='flex flex-col gap-6 mb-12'>
                         <div className='flex gap-3 items-center justify-self-start'>
                             <IoCall size={20}/>
-                            <p className='text-lg'>(07) 5326 1022</p>
+                            <p className='text-base'>(07) 5326 1022</p>
                         </div>
                         <Link href={'mailto:info@corbins.com.au'}>
                             <div className='flex gap-3 items-center justify-self-start'>
                                 <IoMdMail size={20}/>
-                                <p className='text-xl'>info@corbins.com.au</p>
+                                <p className='text-lg'>info@corbins.com.au</p>
                             </div>
                         </Link>
                     </section>
@@ -171,7 +171,7 @@ const Nav = () => {
                             </Link>
                         </div>
                         <Link href="https://www.opentable.com.au/restref/client/?lang=en-AU&ot_source=Restaurant%20website&restref=162221&corrid=4f9ca6c2-719c-46cb-a632-f752d93d8795" target='_blank'>
-                            <button className='w-full rounded-sm py-2 px-6 border border-white hover:bg-white hover:text-black transition-all duration-500'>
+                            <button className='w-full rounded-sm py-2 px-6 border border-black hover:bg-white hover:text-black transition-all duration-500'>
                                 Book Now
                             </button>
                         </Link>

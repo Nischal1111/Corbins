@@ -44,7 +44,7 @@ const index = () => {
 
           <p className='lg:text-center text-justify text-sm lg:w-3/5 w-full'>Sign up to our mailing list to stay in the loop with new releases, events and exclusive offers.</p>
 
-          <div className='lg:w-3/5 w-full flex gap-4 lg:items-center items-start'>
+          <div className='lg:w-3/5 w-full flex gap-4 items-center'>
             <input type="text" placeholder='Email Address' className=' h-10 border border-gray-400 rounded-md pl-4 w-4/5 focus:outline-none text-black'/>
             <button className='bg-transparent color-zinc-400 hover:underline lg-text-base text-sm'>Sign Up</button>
           </div>

@@ -10,7 +10,7 @@ const HeroSection = () => {
             <div className={`absolute ${mainFont.className} w-full lg:top-1/3 top-[20%] flex flex-col items-center justify-center`}>
                 <div className='flex items-center text-white gap-6'>
                     <div className='lg:w-[8rem] w-8 h-[2px] lg:flex hidden  bg-gray-300'></div>
-                    <h1 className='lg:text-5xl text-[1.6rem] font-semibold tracking-widest'>Welcome to COR-BINS</h1>
+                    <h1 className='lg:text-5xl text-[1.6rem] font-semibold tracking-widest flex items-center'>Welcome to CORB<BsDash/>NS</h1>
                     <div className='lg:w-[8rem] w-8 h-[2px] bg-gray-300 lg:flex hidden'></div>
                 </div>
                 <p className='lg:text-lg text-sm font-normal tracking-wider lg:mt-8 mt-4 leading-6 lg:w-3/5 w-9/10 text-center'>Corbin&apos;s: Where flavor meets unique culinary adventure. Indulge in expertly crafted dishes that blend tradition.</p>
