@@ -12,7 +12,7 @@ const MainSection = () => {
     <article className={`flex lg:flex-row flex-col w-full lg:px-12 px-4 lg:gap-24 gap-4 ${mainFont.className} relative lg:-mb-32 mb-2`}>
       <main className='relative flex flex-col flex-start  lg:w-[50%] w-full'>
         
-        <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full h-80% mt-[40%] object-cover'/>
+        <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full lg:h-80% h-2/5 lg:mt-[40%] mt-[22%] object-cover'/>
 
         <div className='py-12'>
           <div className='mt-5 flex items-center gap-5'>
@@ -26,7 +26,7 @@ const MainSection = () => {
           </p>
         </div>
 
-        <Image src="/assets/about-food.avif" alt='about-food' height={1000} width={1000} className='w-full mt-[8%] h-[70vh] object-cover'/>
+        <Image src="/assets/about-food.avif" alt='about-food' height={1000} width={1000} className='w-full mt-[8%] lg:h-[70vh] h-[50vh] object-cover'/>
 
       </main>
 
@@ -52,7 +52,7 @@ const MainSection = () => {
           </p>
         </div>
 
-        <Image src="/assets/about3.webp" alt="image1" height={1000} width={1000} className='w-full h-[70vh] mt-6 object-cover'/>
+        <Image src="/assets/about3.webp" alt="image1" height={1000} width={1000} className='w-full lg:h-[70vh] h-[50vh] mt-6 object-cover'/>
 
         <div className='py-12 flex justify-center flex-col'>
           <div className='mt-5 flex items-center gap-5'>
