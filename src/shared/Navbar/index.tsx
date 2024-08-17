@@ -117,7 +117,7 @@ const Nav = () => {
             {/* New Sidebar */}
             <div 
                 ref={sideRef}
-                className={`fixed inset-y-0 right-0 z-[9999999] flex w-1/2 border-l border-b max-w-xs bg-zinc-100 transition-transform duration-300 ease-in-out ${
+                className={`fixed inset-y-0 right-0 z-[9999999] flex w-3/5 border-l border-b max-w-xs bg-zinc-100 transition-transform duration-300 ease-in-out ${
                     isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
                 }`}
             >
@@ -145,15 +145,15 @@ const Nav = () => {
                         ))}
                     </nav>
 
-                    <section className='flex flex-col gap-6 mb-12'>
+                    <section className='flex flex-col gap-6 mb-12 text-black font-black'>
                         <div className='flex gap-3 items-center justify-self-start'>
-                            <IoCall size={20}/>
-                            <p className='text-base'>(07) 5326 1022</p>
+                            <IoCall size={16}/>
+                            <p className='text-xs'>(07) 5326 1022</p>
                         </div>
                         <Link href={'mailto:info@corbins.com.au'}>
                             <div className='flex gap-3 items-center justify-self-start'>
                                 <IoMdMail size={20}/>
-                                <p className='text-lg'>info@corbins.com.au</p>
+                                <p className='text-xs'>info@corbins.com.au</p>
                             </div>
                         </Link>
                     </section>
