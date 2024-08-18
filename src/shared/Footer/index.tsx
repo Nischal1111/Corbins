@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import {Divider} from "@nextui-org/divider";
 import { IoCall, IoLocation } from 'react-icons/io5';
@@ -6,10 +7,15 @@ import { IoMdMail } from 'react-icons/io';
 import {AiFillInstagram} from 'react-icons/ai';
 import { FaFacebook, FaTripadvisor, FaTwitter } from 'react-icons/fa';
 import { BsDash } from 'react-icons/bs';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/motion/motion';
 
 const index = () => {
   return (
-    <main className={`relative w-full bottom-0 lg:flex lg:flex-row flex-col justify-between lg:p-12 p-8 text-white bg-black h-auto ${mainFont.className} flex-1 border-t border-gray-800`}>
+    <motion.main initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.5}}
+                        variants={fadeIn("down", "tween", 0.3, .8)} className={`relative w-full bottom-0 lg:flex lg:flex-row flex-col justify-between lg:p-12 p-8 text-white bg-black h-auto ${mainFont.className} flex-1 border-t border-gray-800`}>
         <section className="flex-[.3] flex flex-col lg:items-center items-start gap-4">
             <h1 className='text-2xl font-medium '>Contact</h1>
             <Divider className='bg-gray-500 my-2 w-3/5'/>
@@ -72,7 +78,7 @@ const index = () => {
               </div>
             </div>
         </section>
-    </main>
+    </motion.main>
   )
 }
 

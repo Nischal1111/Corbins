@@ -1,11 +1,13 @@
-import { mainFont, subFont } from '@/app/layout'
+"use client"
+import { mainFont } from '@/app/layout'
 import React from 'react'
 import Image from 'next/image'
 import { AiFillInstagram } from 'react-icons/ai'
-import { FaFacebook, FaTwitter, FaTripadvisor } from 'react-icons/fa';
-import { IoMdMail } from 'react-icons/io'
+import { FaFacebook,FaTripadvisor } from 'react-icons/fa';
 import Link from 'next/link';
 import { Divider } from '@nextui-org/react';
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/motion/motion'
 
 const MainSection = () => {
   return (
@@ -14,7 +16,10 @@ const MainSection = () => {
         
         <Image src="/assets/about2.jpg" alt="image1" height={1000} width={1000} className='w-full lg:h-80% h-2/5 lg:mt-[40%] mt-[22%] object-cover'/>
 
-        <div className='py-12'>
+        <motion.div initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("right", "tween", 0.3, .8)}  className='py-12'>
           <div className='mt-5 flex items-center gap-5'>
             <h1 className='text-3xl text-white'>Our Team</h1>
             <div className='w-20 h-[1px] bg-white'></div>
@@ -24,7 +29,7 @@ const MainSection = () => {
             ingredients. Our friendly front-of-house staff ensures every guest feels welcomed and valued. Together, we are committed to excellence and creating 
             memorable moments for our customers. Join us and experience the passion and dedication that define our team at Corbin&apos;s.
           </p>
-        </div>
+        </motion.div>
 
         <Image src="/assets/about-food.avif" alt='about-food' height={1000} width={1000} className='w-full mt-[8%] lg:h-[70vh] h-[50vh] object-cover'/>
 
@@ -36,7 +41,10 @@ const MainSection = () => {
 
         <Image src="/assets/chef.avif" alt='chef' height={1000} width={1000} className='w-full h-[25%] mt-16 object-cover'/>
 
-        <div className='py-12'>
+        <motion.div initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("left", "tween", 0.3, .8)} className='py-12'>
           <div className='mt-5 flex items-center gap-5'>
             <h1 className='text-3xl text-white'>Our Mission</h1>
             <div className='w-20 h-[1px] bg-white'></div>
@@ -50,11 +58,14 @@ const MainSection = () => {
             At Corbin&apos;s, we believe that dining is more than just a meal—it&apos;s an experience. From the warm, inviting ambiance of our restaurant to the exceptional service provided by our staff, every detail is designed to make you feel at home. Whether you&apos;re joining us for a casual lunch, a romantic dinner, or a special celebration, Corbin&apos;s promises a memorable culinary journey.
             Thank you for choosing Corbin&apos;s. We look forward to serving you and sharing our passion for great food.
           </p>
-        </div>
+        </motion.div>
 
         <Image src="/assets/about3.webp" alt="image1" height={1000} width={1000} className='w-full lg:h-[70vh] h-[50vh] mt-6 object-cover'/>
 
-        <div className='py-12 flex justify-center flex-col'>
+        <motion.div initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("left", "tween", 0.3, .8)} className='py-12 flex justify-center flex-col'>
           <div className='mt-5 flex items-center gap-5'>
             <h1 className='text-3xl text-white'>Our Socials</h1>
             <div className='w-20 h-[1px] bg-white'></div>
@@ -80,7 +91,7 @@ const MainSection = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
       </main>
     </article>

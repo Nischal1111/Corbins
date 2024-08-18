@@ -1,5 +1,28 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+const fadeIn = {
+    hidden: { opacity: 0, y: 50 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+            ease: "easeOut"
+        }
+    }
+};
+
+const staggerContainer = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.4
+        }
+    }
+};
 
 const ImageGrid = () => {
     const images = {
@@ -15,10 +38,16 @@ const ImageGrid = () => {
     };
 
     return (
-        <main className='my-8 flex flex-wrap gap-6 w-full flex-1 px-12'>
+        <motion.main 
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true,amount:.25 }}
+            className='my-8 flex flex-wrap gap-6 w-full flex-1 px-12'>
+            
             {/* First row of images */}
-            <div className='flex lg:flex-row flex-col gap-6 w-full lg:h-[300px] sm:h-auto'>
-                <div className='lg:w-1/2 w-full h-[300px]'>
+            <motion.div className='flex lg:flex-row flex-col gap-6 w-full lg:h-[300px] sm:h-auto'>
+                <motion.div variants={fadeIn} className='lg:w-1/2 w-full h-[300px]'>
                     <Image  
                         src={images.img1} 
                         alt='img' 
@@ -26,8 +55,8 @@ const ImageGrid = () => {
                         width={1000} 
                         className='h-[300px] w-full object-cover rounded-sm transform transition duration-300 ease-in-out hover:scale-[1.03]'
                     />
-                </div>
-                <div className='flex lg:flex-row flex-col gap-4 lg:w-1/2 w-full'>
+                </motion.div>
+                <motion.div variants={fadeIn} className='flex lg:flex-row flex-col gap-4 lg:w-1/2 w-full'>
                     <Image  
                         src={images.img2} 
                         alt='img' 
@@ -42,12 +71,12 @@ const ImageGrid = () => {
                         width={1000} 
                         className='lg:w-1/2 w-full object-cover rounded-sm transform transition duration-300 ease-in-out hover:scale-[1.05]'
                     />
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
             {/* Second row of images */}
-            <div className='flex lg:flex-row-reverse flex-col-reverse gap-8 w-full lg:h-[300px] sm:h-auto'>
-                <div className='lg:w-1/2 w-full h-[300px]'>
+            <motion.div variants={fadeIn} className='flex lg:flex-row-reverse flex-col-reverse gap-8 w-full lg:h-[300px] sm:h-auto'>
+                <motion.div variants={fadeIn} className='lg:w-1/2 w-full h-[300px]'>
                     <Image  
                         src={images.img4} 
                         alt='img' 
@@ -55,8 +84,8 @@ const ImageGrid = () => {
                         width={1000} 
                         className='h-[300px] w-full object-cover rounded-sm transform transition duration-300 ease-in-out hover:scale-[1.03]'
                     />
-                </div>
-                <div className='flex lg:flex-row flex-col gap-4 lg:w-1/2 w-full'>
+                </motion.div>
+                <motion.div variants={fadeIn} className='flex lg:flex-row flex-col gap-4 lg:w-1/2 w-full'>
                     <Image  
                         src={images.img5} 
                         alt='img' 
@@ -71,12 +100,12 @@ const ImageGrid = () => {
                         width={1000} 
                         className='lg:w-1/2 w-full object-cover rounded-sm transform transition duration-300 ease-in-out hover:scale-[1.05]'
                     />
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
             {/* Third row of images */}
-            <div className='flex lg:flex-row flex-col gap-6 w-full h-[300px]'>
-                <div className='lg:w-1/2 w-full h-[300px]'>
+            <motion.div variants={fadeIn} className='flex lg:flex-row flex-col gap-6 w-full h-[300px]'>
+                <motion.div variants={fadeIn} className='lg:w-1/2 w-full h-[300px]'>
                     <Image  
                         src={images.img7} 
                         alt='img' 
@@ -84,8 +113,8 @@ const ImageGrid = () => {
                         width={1000} 
                         className='h-[300px] w-full object-cover rounded-sm transform transition duration-300 ease-in-out hover:scale-[1.03]'
                     />
-                </div>
-                <div className='flex lg:flex-row flex-col gap-4 lg:w-1/2 w-full'>
+                </motion.div>
+                <motion.div variants={fadeIn} className='flex lg:flex-row flex-col gap-4 lg:w-1/2 w-full'>
                     <Image  
                         src={images.img8} 
                         alt='img' 
@@ -100,9 +129,9 @@ const ImageGrid = () => {
                         width={1000} 
                         className='lg:w-1/2 w-full object-cover rounded-sm transform transition duration-300 ease-in-out hover:scale-[1.05]'
                     />
-                </div>
-            </div>
-        </main>
+                </motion.div>
+            </motion.div>
+        </motion.main>
     );
 };
 

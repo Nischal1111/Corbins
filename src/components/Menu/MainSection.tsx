@@ -1,16 +1,27 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { mainFont } from '@/app/layout'
+import { motion } from 'framer-motion'
+import {fadeIn} from "../../motion/motion"
 
 const MainSection = () => {
   return (
-    <main className={`my-4 lg:mt-[7rem] justify-center flex flex-col items-center lg:gap-0 gap-20 pb-8 pt-12 ${mainFont.className}`}>
+    <main className={`my-4 lg:mt-[7rem] justify-center flex flex-col items-center lg:gap-0 gap-20 pb-12 pt-12 ${mainFont.className}`}>
 
         <section className='flex w-[90%] lg:flex-row flex-col relative lg:h-[50vh] h-auto items-center'>
-            <main className='lg:w-[60%] w-full'>
+            <motion.main  initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("right", "tween", 0.3, .8)} 
+                        className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/food-menu.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
-            </main>
-            <main className=' relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-left-[12%] left-0 '>
+            </motion.main>
+            <motion.main  initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true,amount:.25}}
+                            variants={fadeIn("left", "tween", 0.3, .8)} 
+                            className=' relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-left-[12%] left-0 '>
                 <div className='bg-[rgba(0,0,0,.7)] p-4 border-t border-r border-gray-400'>
                     <div className='mt-3 flex items-center gap-5'>
                         <h1 className='lg:text-xl text-lg text-white pl-4'>Food Menu</h1>
@@ -22,14 +33,20 @@ const MainSection = () => {
                     <button className='bg-zinc-300 text-black rounded-sm py-2 px-4 mt-8 ml-4 tracking-widest text-xs hover:bg-gray-400 duration-500'>View Menu</button>
                 </div>
 
-            </main>
+            </motion.main>
         </section>
 
-        <section className='flex w-[90%] relative lg:mt-[10rem] lg:h-[50vh] h-auto items-center lg:flex-row-reverse flex-col'>
-            <main className='lg:w-[60%] w-full'>
+        <section className='flex w-[90%] relative lg:mt-[8rem] lg:h-[50vh] h-auto items-center lg:flex-row-reverse flex-col'>
+            <motion.main initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("left", "tween", 0.3, .8)}  className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/drink-menu.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
-            </main>
-            <main className=' relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-right-[12%] right-0 '>
+            </motion.main>
+            <motion.main initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("right", "tween", 0.3, .8)}  className=' relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-right-[12%] right-0 '>
                 <div className='bg-[rgba(0,0,0,.7)] p-4 border-b border-l border-gray-400'>
                     <div className='mt-3 flex items-center gap-5'>
                         <h1 className='lg:text-xl text-lg text-white pl-4'>Drink Menu</h1>
@@ -41,14 +58,20 @@ const MainSection = () => {
                     <button className='bg-zinc-300 text-black rounded-sm py-2 px-4 mt-8 ml-4 tracking-widest text-xs hover:bg-gray-400 duration-500'>View Menu</button>
                 </div>
 
-            </main>
+            </motion.main>
         </section>
 
-        <section className='flex w-[90%] lg:flex-row flex-col relative lg:mt-[6rem] lg:h-[50vh] h-auto items-center '>
-            <main className='lg:w-[60%] w-full'>
+        <section className='flex w-[90%] lg:flex-row flex-col relative lg:mt-[8rem] lg:h-[50vh] h-auto items-center '>
+            <motion.main initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("right", "tween", 0.3, .8)}  className='lg:w-[60%] w-full'>
                 <Image src="/assets/menus/degustation-foods.avif" alt='menu' height={1000} width={1000} className='w-full h-full object-cover'/>
-            </main>
-            <main className='relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-left-[12%] left-0 '>
+            </motion.main>
+            <motion.main initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("left", "tween", 0.3, .8)}  className='relative lg:w-[50%] w-full lg:top-0 top-[-80%]  lg:-left-[12%] left-0 '>
                 <div className='bg-[rgba(0,0,0,.7)] p-4 border-y border-gray-400'>
                     <div className='mt-3 flex items-center gap-5'>
                         <h1 className='lg:text-xl text-lg text-white pl-4'>Degustation Menu</h1>
@@ -60,7 +83,7 @@ const MainSection = () => {
                     <button className='bg-zinc-300 text-black rounded-sm py-2 px-4 mt-8 ml-4 tracking-widest text-xs hover:bg-gray-400 duration-500'>View Menu</button>
                 </div>
 
-            </main>
+            </motion.main>
         </section>
 
     </main>

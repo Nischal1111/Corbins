@@ -1,19 +1,28 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { mainFont } from '@/app/layout'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/motion/motion'
 
 
 const MainSection = () => {
   return (
     <main className={`lg:mt-[8rem] mt-12 ${mainFont.className} flex items-center flex-col justify-center mb-12 gap-16`}>
         <article className='flex lg:flex-row flex-col gap-8 w-full'>
-            <section className='w-1/2 flex-1 lg:flex lg:flex-row hidden relative' >
+            <motion.section initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("up", "tween", 0.3, .8)} className='w-1/2 flex-1 lg:flex lg:flex-row hidden relative' >
                 <Image src="/assets/home/homeSection2.avif" alt='home' height={1000} width={1000} className='relative left-12 rounded-md w-[70%] h-3/5 object-cover'/>
                 <Image src="/assets/home/homeSection1.avif" alt='home' height={1000} width={1000} className='relative right-[12%] top-[15%] rounded-md w-[70%] h-3/5 object-cover z-2 shadow-2xl'/>
-            </section>
+            </motion.section>
 
-            <section className='flex flex-col lg:w-1/2 w-full lg:px-6 px-4 py-6'>
+            <motion.section initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true,amount:.25}}
+                        variants={fadeIn("left", "tween", 0.3, .8)} className='flex flex-col lg:w-1/2 w-full lg:px-6 px-4 py-6'>
                 <div className='flex flex-col lg:w-[90%] w-full'>
                     <div className='mt-5 flex items-center gap-5'>
                         <h1 className='lg:text-3xl text-2xl text-white font-bold'>Corbin&apos;s: Where Every Bite Tells a Story</h1>
@@ -31,7 +40,7 @@ const MainSection = () => {
 
                 </div>
 
-            </section>
+            </motion.section>
         </article>
 
         <article className='lg:h-[90vh] h-[40vh] w-full custom-home-scroll1 mb-[1rem] relative flex items-center justify-center z-[99]'>
