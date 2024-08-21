@@ -1,6 +1,6 @@
 "use client"
 import { mainFont, subFont } from '@/app/layout'
-import { Modal, ModalBody, ModalContent, useDisclosure } from '@nextui-org/react'
+import { Modal, ModalContent, useDisclosure } from '@nextui-org/react'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
 import Image from 'next/image'
@@ -9,7 +9,7 @@ import { IoCall } from 'react-icons/io5'
 import { IoMdMail } from 'react-icons/io'
 
 const HeroSection = () => {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure();
 
   useEffect(() => {
     const hasSeenModal = localStorage.getItem('hasSeenModal');
@@ -36,27 +36,31 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
+
+      {/* Modal visible on all screens */}
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         isDismissable={true}
         isKeyboardDismissDisabled={true}
-        className={`${mainFont.className} h-[60vh]`}
+        className={`${mainFont.className} p-0 fixed`}
         size={"2xl"}
+        backdrop='opaque'
       >
-        <ModalContent>
+        <ModalContent className='p-0'>
           {(onClose) => (
             <div className='flex p-0 text-black'>
-              <section className='w-1/2 h-full'>
+              {/* Conditionally render image based on screen size */}
+              <section className='lg:w-1/2 w-full lg:flex hidden'>
                 <Image src="/assets/modal.avif" alt="ModalImage" height={1000} width={1000} className='w-full h-full object-cover' />
               </section>
-              <section className='w-1/2 p-10 flex flex-col items-center justify-center gap-2 bg-slate-50'>
+              <section className='lg:w-1/2 w-full p-10 flex flex-col items-center justify-center gap-2 bg-slate-50'>
                 <div className='flex flex-col gap-2'>
                   <h1 className='text-2xl tracking-wider font-medium'>Book at CORBINS</h1>
                   <p className='text-sm font-extralight tracking-wide text-justify'>
                     Booking a table at Corbin&apos;s is your gateway to an exceptional dining experience. Known for its warm ambiance and delectable cuisine, Corbin&apos;s offers a perfect setting for any occasion. With attentive service and a menu that caters to diverse tastes, dining at Corbin&apos;s is always a delightful affair.
                   </p>
-                 <section className='flex flex-col items-startjustify-between text-xs'>
+                  <section className='flex flex-col items-start justify-between text-xs'>
                     <div className='flex gap-3 items-center justify-self-start'>
                         <IoCall size={15}/>
                         <p className='text-sm'>(07) 5326 1022</p>
@@ -67,12 +71,12 @@ const HeroSection = () => {
                             <p className='text-sm'>info@corbins.com.au</p>
                         </div>
                     </Link>
-                </section>
-                <Link href="https://www.opentable.com.au/restref/client/?lang=en-AU&ot_source=Restaurant%20website&restref=162221&corrid=4f9ca6c2-719c-46cb-a632-f752d93d8795" target='_blank'>
-                  <button className='bg-transparent border border-black text-black rounded-sm w-full py-2 px-4 mt-8 relative tracking-widest text-base hover:bg-black hover:text-white duration-500'>
-                    Book a table
-                  </button>
-                </Link>
+                  </section>
+                  <Link href="https://www.opentable.com.au/restref/client/?lang=en-AU&ot_source=Restaurant%20website&restref=162221&corrid=4f9ca6c2-719c-46cb-a632-f752d93d8795" target='_blank'>
+                    <button className='bg-transparent border border-black text-black rounded-sm w-full py-2 px-4 mt-8 relative tracking-widest text-base hover:bg-black hover:text-white duration-500'>
+                      Book a table
+                    </button>
+                  </Link>
                 </div>
               </section>
             </div>
