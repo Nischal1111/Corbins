@@ -36,7 +36,12 @@ const MainSection = () => {
       "name": "Australian BBQ Ribs",
       "price": 28,
       "description": "Tender pork ribs glazed with a smoky BBQ sauce. Accompanied by coleslaw and cornbread."
-    }
+    },
+    {
+      "name": "Barramundi Fish Tacos",
+      "price": 22.5,
+      "description": "Crispy barramundi fillets with fresh mango salsa. Served in soft corn tortillas with a zesty lime aioli."
+    },
   ]
     const Degus=[
     {
@@ -48,6 +53,10 @@ const MainSection = () => {
       "name": "Bush Tucker Experience",
       "price": 50,
       "description": "A unique tasting menu featuring native Australian ingredients like wattleseed, finger lime, and quandong in a series of small plates."
+    },{
+      "name": "Aussie BBQ Tasting Plate",
+      "price": 45,
+      "description": "A selection of Australian BBQ favorites including ribs, sausages, and grilled prawns with a variety of sauces."
     }
   ]
     const Drinks= [
