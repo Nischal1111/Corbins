@@ -80,7 +80,12 @@ const MainSection = () => {
       "name": "Chardonnay",
       "price": 8,
       "description": "A full-bodied white wine with notes of citrus and oak."
-    }
+    },
+    {
+      "name": "Australian Pale Ale",
+      "price": 6.5,
+      "description": "A crisp and hoppy pale ale brewed locally with Australian ingredients."
+    },
   ]
   return (
     <main className={`my-4 lg:mt-[7rem] justify-center flex flex-col items-center lg:gap-8 gap-20 pb-12 pt-12 ${mainFont.className}`}>
