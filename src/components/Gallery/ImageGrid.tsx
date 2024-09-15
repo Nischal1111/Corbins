@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -24,7 +24,20 @@ const staggerContainer = {
     }
 };
 
+const SkeletonLoader = () => (
+    <div className="flex flex-col space-y-6 w-full mt-4">
+        <div className="h-[300px] bg-gradient-to-r from-zinc-200 via-gray-400 to-gray-100 rounded-xl w-full skeleton-animation"></div>
+        <div className="flex space-x-4">
+            <div className="h-[300px] bg-gradient-to-r from-zinc-200 via-gray-400 to-gray-100 rounded-xl w-1/2 skeleton-animation"></div>
+            <div className="h-[300px] bg-gradient-to-r from-zinc-200 via-gray-400 to-gray-100 rounded-xl w-1/2 skeleton-animation"></div>
+        </div>
+        <div className="h-[300px] bg-gradient-to-r from-zinc-200 via-gray-400 to-gray-100 rounded-xl w-full skeleton-animation"></div>
+    </div>
+);
+
 const ImageGrid = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
     const images = {
         img1: `/assets/gallery/gallery1.avif`,
         img2: `/assets/about-food.avif`,
@@ -37,12 +50,24 @@ const ImageGrid = () => {
         img9: `/assets/gallery/gallery9.avif`,
     };
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 1000); // Simulate a 1-second render time
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (isLoading) {
+        return <SkeletonLoader />;
+    }
+
     return (
         <motion.main 
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true,amount:.25 }}
+            viewport={{ once: true, amount: .25 }}
             className='my-8 flex flex-wrap gap-6 w-full flex-1 px-12'>
             
             {/* First row of images */}
