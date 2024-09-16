@@ -52,8 +52,7 @@ const MainSection = () => {
                         <div className='lg:w-40 w-16 h-[1px] bg-white'></div>
                     </div>
                     <p className='text-justify text-xs lg:text-base lg:mt-8 mt-6'>
-                        Welcome to Corbin&apos;s, where exceptional dining meets warm hospitality. Our menu features a harmonious blend of classic and contemporary flavors, crafted 
-                        with the finest ingredients to ensure every meal is a memorable experience. At Corbin&apos;s, we believe in creating more than just delicious food.
+                        Explore a curated selection of exquisite dishes, each crafted to tantalize your taste buds. From comforting classics to bold new flavors, our menu offers something for everyone. Whether you’re in the mood for a light appetizer or a hearty entrée, our diverse and delicious offerings are sure to impress. Each dish is thoughtfully prepared using fresh, quality ingredients, ensuring that every bite delivers an exceptional dining experience. Discover your next favorite meal as you indulge in our variety of cuisine options, tailored to elevate your dining pleasure.
                     </p>
                     <button className='bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative tracking-widest lg:text-base text-xs hover:bg-white hover:text-black duration-500'>Explore Menu</button>
                 </div>
