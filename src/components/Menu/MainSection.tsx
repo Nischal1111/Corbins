@@ -8,40 +8,20 @@ import {fadeIn} from "../../motion/motion"
 const MainSection = () => {
     const Lunch=[
     {
-      "name": "Barramundi Fish Tacos",
-      "price": 22.5,
-      "description": "Crispy barramundi fillets with fresh mango salsa. Served in soft corn tortillas with a zesty lime aioli."
+      "name": "Fried Chicken Roll",
+      "price": 12,
+      "description": "Our Special Fried Chicken Roll, served with Smoked Sriracha and Pickled Cabbage."
     },
     {
-      "name": "Kangaroo Burger",
-      "price": 25,
-      "description": "Juicy kangaroo patty topped with beetroot relish and bush tomato chutney. Served with sweet potato fries."
-    },
-    {
-      "name": "Pumpkin and Feta Salad",
-      "price": 18,
-      "description": "Roasted pumpkin cubes with crumbled feta cheese, mixed greens, and a balsamic glaze."
-    },
-    {
-      "name": "Meat Pie",
+      "name": "Corbins Bento Box",
       "price": 20,
-      "description": "Traditional Australian meat pie filled with minced beef and gravy, served with mushy peas and tomato sauce."
+      "description": "Okonomiyaki Chicken & Rice, Cheeseburger Spring Roll, Pork Bao (Vegetarian on request)"
     },
     {
-      "name": "Chicken Parmigiana",
-      "price": 24,
-      "description": "Breaded chicken breast topped with marinara sauce and melted cheese. Served with a side of crispy fries."
-    },
-    {
-      "name": "Australian BBQ Ribs",
-      "price": 28,
-      "description": "Tender pork ribs glazed with a smoky BBQ sauce. Accompanied by coleslaw and cornbread."
-    },
-    {
-      "name": "Barramundi Fish Tacos",
-      "price": 22.5,
-      "description": "Crispy barramundi fillets with fresh mango salsa. Served in soft corn tortillas with a zesty lime aioli."
-    },
+      "name": "Vietnamese Banh Mi Roll",
+      "price": 12,
+      "description": "Served with either Fried Chicken, Crispy Pork Belly, Teriyaki Mushroom. One of your choice. "
+    }
   ]
     const Degus=[
     {

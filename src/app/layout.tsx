@@ -5,6 +5,7 @@ import Nav from "@/shared/Navbar";
 import Footer from "@/shared/Footer"
 import { NextUIProvider } from "@nextui-org/system";
 import ScrollToTop from "@/shared/ScrollToTop";
+import NProgressClient from "@/shared/NProgressClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,8 +27,10 @@ const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  
   children,
 }: Readonly<{
+  
   children: React.ReactNode;
 }>) {
   return (
@@ -35,6 +38,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <NextUIProvider>
             <Nav />
+            <NProgressClient/>
             <ScrollToTop />
             {children}
             <Footer />
