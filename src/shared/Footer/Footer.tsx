@@ -10,7 +10,7 @@ import { BsDash } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/motion/motion';
 
-const index = () => {
+const Footer = () => {
   const [email,setEmail]=useState("")
 
   const handleEmailChange=(e:ChangeEvent<HTMLInputElement>)=>{
@@ -91,4 +91,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Footer

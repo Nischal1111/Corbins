@@ -1,9 +1,9 @@
 "use client";
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
-import { mainFont, subFont } from '@/app/layout';
+import {  subFont } from '@/app/layout';
 import { usePathname } from 'next/navigation';
-import { FaInstagram, FaFacebookF, FaTwitter, FaFacebook, FaTripadvisor } from 'react-icons/fa';
+import {  FaFacebook, FaTripadvisor } from 'react-icons/fa';
 import { IoCall } from 'react-icons/io5';
 import { IoMdMail } from 'react-icons/io';
 import { AiFillInstagram } from 'react-icons/ai';
@@ -11,7 +11,7 @@ import { Divider } from '@nextui-org/react';
 import { BsDash } from 'react-icons/bs';
 import { HiMenu } from 'react-icons/hi';
 
-const Nav = () => {
+const ClientNav = () => {
     const pathname = usePathname();
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const sideRef = useRef<HTMLDivElement>(null);
@@ -185,4 +185,4 @@ const Nav = () => {
     );
 };
 
-export default Nav;
+export default ClientNav;

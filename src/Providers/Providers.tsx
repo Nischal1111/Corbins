@@ -42,12 +42,9 @@ export default function LoadingProvider({ children }: LoadingProviderProps) {
 
     startLoading();
     
-    // This will run whenever the route changes
-    const cleanup = () => {
+    return () => {
       stopLoading();
     };
-
-    return cleanup;
   }, [pathname, searchParams]);
 
   return (

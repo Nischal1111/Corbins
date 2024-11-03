@@ -1,7 +1,8 @@
+"use client"
 import { Progress } from '@nextui-org/react'
 import React from 'react'
 
-interface LoaderProps {
+export interface LoaderProps {
   progress: number;
 }
 
