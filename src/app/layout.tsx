@@ -1,4 +1,3 @@
-// "use server"
 import { Inter, Life_Savers, Baskervville } from "next/font/google";
 import "./globals.css";
 import Footer from "@/shared/Footer/Footer";
@@ -8,9 +7,9 @@ import { Suspense } from "react";
 import { NextProvider } from "@/Providers/NextUiProvider";
 import Nav from "@/shared/Navbar/Nav";
 import Loading from "@/shared/Loading";
-import Head from "next/head";
 import RestaurantSEO from "./RestaurantSeo";
-
+import JsonLd from "./JsonLd";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +25,6 @@ export const mainFont = Baskervville({
     style: ["normal"]
 });
 
-
 export default function RootLayout({
   children,
 }: {
@@ -34,13 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-[#0d0d0d]">
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="Corbins - Fine dine and bar" />
-        <title>Corbins - Fine dine and bar</title>
-      </Head>
+      <Head><JsonLd/></Head>
       <RestaurantSEO 
           restaurantName="Corbins - Fine dine and bar"
           description="Experience fine dining at Corbins. We offer a carefully curated menu featuring fresh, locally-sourced ingredients and exceptional service in an elegant atmosphere."
@@ -55,11 +47,11 @@ export default function RootLayout({
           images={[
             "/assets/home.jpeg",
             "/assets/gallery/gallery1.avif",
-            "/assets/about-food.avif"          ]}
+            "/assets/about-food.avif"          
+          ]}
         />
       <body className={inter.className}>
         <NextProvider>
-
             <Nav />
             <Suspense fallback={<Loading />}>
               <NProgressClient />
