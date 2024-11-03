@@ -54,7 +54,9 @@ const MainSection = () => {
                     <p className='text-justify text-xs lg:text-base lg:mt-8 mt-6'>
                         Explore a curated selection of exquisite dishes, each crafted to tantalize your taste buds. From comforting classics to bold new flavors, our menu offers something for everyone. Whether you’re in the mood for a light appetizer or a hearty entrée, our diverse and delicious offerings are sure to impress. Each dish is thoughtfully prepared using fresh, quality ingredients, ensuring that every bite delivers an exceptional dining experience. Discover your next favorite meal as you indulge in our variety of cuisine options, tailored to elevate your dining pleasure.
                     </p>
-                    <button className='bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative tracking-widest lg:text-base text-xs hover:bg-white hover:text-black duration-500'>Explore Menu</button>
+                    <Link href={"/menus"}>
+                        <button className='bg-transparent border border-white text-white rounded-sm py-4 px-6 mt-8 relative tracking-widest lg:text-base text-xs hover:bg-white hover:text-black duration-500'>Explore Menu</button>
+                    </Link>
                 </div>
             </div>
         </article>

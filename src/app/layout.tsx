@@ -9,6 +9,7 @@ import { NextProvider } from "@/Providers/NextUiProvider";
 import Nav from "@/shared/Navbar/Nav";
 import Loading from "@/shared/Loading";
 import Head from "next/head";
+import RestaurantSEO from "./RestaurantSeo";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -40,8 +41,25 @@ export default function RootLayout({
         <meta name="description" content="Corbins - Fine dine and bar" />
         <title>Corbins - Fine dine and bar</title>
       </Head>
+      <RestaurantSEO 
+          restaurantName="Corbins - Fine dine and bar"
+          description="Experience fine dining at Corbins. We offer a carefully curated menu featuring fresh, locally-sourced ingredients and exceptional service in an elegant atmosphere."
+          address="34 Duporth Avenue, Maroochydore, Queensland"
+          phone="(07) 5326 1022"
+          cuisine="Multi"
+          openingHours={[
+            "Tuesday to Thursday 12PM-Late",
+            "Friday and Saturday 12PM to LATE",
+            "Sunday & Monday- Closed"
+          ]}
+          images={[
+            "/assets/home.jpeg",
+            "/assets/gallery/gallery1.avif",
+            "/assets/about-food.avif"          ]}
+        />
       <body className={inter.className}>
         <NextProvider>
+
             <Nav />
             <Suspense fallback={<Loading />}>
               <NProgressClient />
