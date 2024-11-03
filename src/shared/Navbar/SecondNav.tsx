@@ -21,7 +21,7 @@ const ClientNav = () => {
         { title: "About", link: "/about" },
         { title: "Contact", link: "/contacts" },
         { title: "Gallery", link: "/gallery" },
-        { title: "Menus", link: "/menus" }
+        { title: "Menus", link: "/menu" }
     ];
 
     useEffect(() => {
