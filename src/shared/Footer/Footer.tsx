@@ -9,6 +9,7 @@ import { FaFacebook, FaTripadvisor, FaTwitter } from 'react-icons/fa';
 import { BsDash } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/motion/motion';
+import Link from 'next/link';
 
 const Footer = () => {
   const [email,setEmail]=useState("")
@@ -69,6 +70,7 @@ const Footer = () => {
             <p className='text-sm tracking-wide w-4/5 text-center'>© 2024 Copyright Corbins Restaurant, 
                 34 Duporth Avenue,
                     Maroochydore, Queensland</p>
+            <p className='text-sm tracking-wide w-4/5 text-center'>Designed and Developed by <span><Link href={'https://nischal-neupane.com.np'} target='_blank' className='underline'>Nischal Neupane</Link></span></p>
           </div>
         </section>
 
